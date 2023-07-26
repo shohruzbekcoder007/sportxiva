@@ -28,7 +28,7 @@ export const MenuItem = styled.li`
     margin: 0 50px;
     transition: all .3s;
     :hover {
-        color: #0093DD;
+        color: ${props => props.theme.color.color2};
     }
 `
 
