@@ -8,6 +8,7 @@ export const HeaderWrapper = styled.header`
     left: 0;
     top: 0;
     transition: all .3s;
+    z-index: 1000;
     box-shadow: ${props => props.type === "effective" ? '10px 0px 30px 10px #e8e8e8':``};
 `
 

@@ -3,7 +3,7 @@ import bgi from '../../imgs/capa1.png'
 
 export const WelcomeWrapper = styled.div`
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(${bgi});
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -13,4 +13,33 @@ export const WelcomeWrapper = styled.div`
     align-items: center;
     flex-wrap: wrap;
     padding-top: 120px;
+`
+
+export const WelcomeContainer = styled.div`
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+`
+
+export const WelcomeInfo = styled.div`
+    h1 {
+        color: ${props => props.theme.color.color1};
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 72px;
+    }
+`
+
+export const WelcomeImage = styled.div`
+    flex-shrink: 0;
+    img {
+        /* width: 688px; */
+        /* height: 552px; */
+        object-fit: cover;
+        border-radius: 15px;
+        background: #D9D9D9;
+    }
 `
