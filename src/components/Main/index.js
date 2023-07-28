@@ -6,6 +6,7 @@ import FestInfo from '../FestInfo'
 import Championships from '../Championships'
 import DemonstrationSports from '../DemonstrationSports'
 import { Outlet } from 'react-router-dom'
+import OurHistory from '../OurHistory'
 
 export default function Main() {
   return (
@@ -15,6 +16,7 @@ export default function Main() {
         <FestInfo/>
         <Championships/>
         <DemonstrationSports/>
+        <OurHistory/>
     </>
   ) 
 }

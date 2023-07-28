@@ -10,7 +10,7 @@ export default function VideoWelcome() {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
 
-  const deadline = "August, 10, 2023";
+  const deadline = "September, 7, 2023";
 
   const getTime = () => {
     const time = Date.parse(deadline) - Date.now();
