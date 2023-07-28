@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom'
 export const HeaderWrapper = styled.header`
     width: 100%;
     background-color: #fff;
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     transition: all .3s;
     z-index: 1000;
-    box-shadow: ${props => props.type === "effective" ? '10px 0px 30px 10px #e8e8e8':``};
+    /* box-shadow: ${props => props.type === "effective" ? '10px 0px 30px 10px #e8e8e8':``}; */
 `
 
 export const HeaderContainer = styled.div`
