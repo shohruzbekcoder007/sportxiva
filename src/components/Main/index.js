@@ -5,11 +5,11 @@ import VideoWelcome from '../VideoWelcome'
 import FestInfo from '../FestInfo'
 import Championships from '../Championships'
 import DemonstrationSports from '../DemonstrationSports'
+import { Outlet } from 'react-router-dom'
 
 export default function Main() {
   return (
     <>
-        <Header/>
         <Welcome/>
         <VideoWelcome/>
         <FestInfo/>
