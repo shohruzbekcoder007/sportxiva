@@ -37,7 +37,7 @@ export const ChampionshipMainBlogBox = styled.div`
     border-right: 1px solid #fff;
     height: 100%;
     position: relative;
-    margin-bottom: 12px;
+    /* margin-bottom: 12px; */
     :last-child {
         border-right: none;
     }
