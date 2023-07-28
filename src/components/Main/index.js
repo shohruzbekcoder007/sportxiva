@@ -7,7 +7,6 @@ import Championships from '../Championships'
 import DemonstrationSports from '../DemonstrationSports'
 import { Outlet } from 'react-router-dom'
 import OurHistory from '../OurHistory'
-import OurHistory from '../OurHistory'
 
 export default function Main() {
   return (
