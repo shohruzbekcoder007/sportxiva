@@ -5,9 +5,8 @@ import VideoWelcome from '../VideoWelcome'
 import FestInfo from '../FestInfo'
 import Championships from '../Championships'
 import DemonstrationSports from '../DemonstrationSports'
-import { Outlet } from 'react-router-dom'
 import OurHistory from '../OurHistory'
-import OurHistory from '../OurHistory'
+import Sponsors from '../Sponsors'
 
 export default function Main() {
   return (
@@ -19,6 +18,7 @@ export default function Main() {
         <Championships/>
         <DemonstrationSports/>
         <OurHistory/>
+        <Sponsors/>
     </>
   ) 
 }
