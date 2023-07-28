@@ -11,6 +11,7 @@ import OurHistory from '../OurHistory'
 export default function Main() {
   return (
     <>
+        <Header/>
         <Welcome/>
         <VideoWelcome/>
         <FestInfo/>
