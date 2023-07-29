@@ -5,9 +5,24 @@ import { MainWrapper } from '../../global_styles/styles'
 import CountrySelect from '../CountrySelect/CountrySelect'
 import Checkbox from '@mui/material/Checkbox';
 import { Button } from '@mui/material'
+import SportSelector from '../CountrySelect/SportSelector'
+import GenderSelector from '../CountrySelect/GenderSelector'
+import { useState } from 'react'
+import BirthdayField from '../CountrySelect/BirthdayField'
+
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
+
+
 export default function Register() {
+
+  const [images, setImages] = useState(null)
+
+  const getImages = (_images) => {
+    console.log(_images[0].photo_2)
+    setImages(_images[0])
+  }
+
   return (
     <div>
       <MainWrapper>
@@ -16,7 +31,7 @@ export default function Register() {
         </RegisterTitle>
         <WelcomeContainer>
           <RegisterImage>
-            <img src={require("../../imgs/photo_2023-07-26_00-34-17 1.png")} alt="Kurash rasmlari" />
+            {images?<img src={images.photo_1} alt="Kurash rasmlari" />:<></>}
           </RegisterImage>
           <div style={{ width: "50%" }}>
             <div style={{ display: "flex", justifyContent: 'space-between', margin: "16px 0" }}>
@@ -27,7 +42,7 @@ export default function Register() {
 
               <div>
                 <p style={{ margin: '10px 0' }}>Tug’ilgan sana</p>
-                <CountrySelect title={"tanlang"} />
+                <BirthdayField />
               </div>
             </div>
             <div style={{ display: "flex", justifyContent: 'space-between', margin: "16px 0" }}>
@@ -43,17 +58,17 @@ export default function Register() {
             <div style={{ display: "flex", justifyContent: 'space-between', margin: "16px 0" }}>
               <div>
                 <p style={{ margin: '10px 0' }}>Sport turi</p>
-                <CountrySelect title={'Belbog’li kurash'} />
+                <SportSelector title={"tanlang"} getImages={getImages}/>
               </div>
 
               <div>
                 <p style={{ margin: '10px 0' }}>Jinsi</p>
-                <CountrySelect title={'Erkak'} />
+                <GenderSelector title={'tanlang'} />
               </div>
 
             </div>
             <div style={{ display: 'flex', alignItems: "center", justifyContent: "center", margin: "40px 0" }}>
-              <Checkbox {...label} defaultChecked />
+              <Checkbox {...label}  />
               <RegisterGuest style={{ color: "#0093DD" }}>Mehmon sifatida ro’yxatdan o’tish</RegisterGuest>
             </div>
             <div style={{ display: 'flex', justifyContent: "space-around", margin: "80px 0" }}>
@@ -104,11 +119,11 @@ export default function Register() {
               <h1>Fotogalereya</h1>
             </RegisterTitle>
             <div style={{display: "flex", justifyContent: "space-between"}}>
-            <img style={{width: "400px", borderRadius: '10px'}} src={require("../../imgs/photo_2023-07-26_00-34-17 1.png")} alt="" />
-            <img style={{width: "400px", borderRadius: '10px'}} src={require("../../imgs/photo_2023-07-26_00-34-17 1.png")} alt="" />
-            <img style={{width: "400px", borderRadius: '10px'}} src={require("../../imgs/photo_2023-07-26_00-34-17 1.png")} alt="" />
-            </div>
-          </div>
+            {images?<img style={{width: "400px", borderRadius: '10px'}}  src={images.photo_2} alt="photo_1" />:<></>}
+            {images?<img style={{width: "400px", borderRadius: '10px'}}  src={images.photo_3} alt="photo_1" />:<></>}
+            {images?<img style={{width: "400px", borderRadius: '10px'}}  src={images.photo_4} alt="photo_1" />:<></>}
+           </div>
+        </div>
       </MainWrapper>
     </div>
   )

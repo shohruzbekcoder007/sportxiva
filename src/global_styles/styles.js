@@ -17,3 +17,14 @@ export const Title = styled.h3`
     font-weight: 800;
     line-height: normal;
 `
+
+export const FlagImg = styled.div `
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    img {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+`

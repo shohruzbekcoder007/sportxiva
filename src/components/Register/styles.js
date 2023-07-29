@@ -3,6 +3,7 @@ import {
 } from "styled-components";
 
 export const RegisterTitle = styled.div `
+    padding-top: 270px;
     h1 {
         color: ${props => props.theme.color.color1};
         font-size: 56px;

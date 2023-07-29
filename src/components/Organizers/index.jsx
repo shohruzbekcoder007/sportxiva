@@ -1,7 +1,11 @@
-import React from 'react'
+import Header from '../Header'
+import OrganizersUser from '../OrganizersUser'
 
-export default function index() {
+export default function MainOrganizers() {
   return (
-    <div>insdex</div>
-  )
+    <>
+        <Header />
+        <OrganizersUser />
+    </>
+  ) 
 }

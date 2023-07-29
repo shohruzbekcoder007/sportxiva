@@ -2,20 +2,31 @@ import React, { useEffect, useState } from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
-import { country_name } from '../../utils/API_urls';
+import { milliy_registr } from '../../utils/API_urls';
 import { countryName } from './requests';
 
-export default function CountrySelect(props) {
+export default function SportSelector(props) {
 
   const [countries, setCountries] = useState([])
+  const [contId, setCountId] = useState(0)
 
   useEffect(() => {
-    countryName(country_name, (response) => {
+    countryName(milliy_registr, (response) => {
       setCountries(response.data)
     }, (error) => {
       console.log(error)
     })
   }, [])
+
+  useEffect(() => {
+    if(contId !== 0){
+      countryName(milliy_registr + `?id=${contId}`, (response) => {
+        props.getImages(response.data)
+      }, (error) => {
+        console.log(error)
+      })
+    }
+  }, [contId])
 
   return (
     <Autocomplete
@@ -29,6 +40,9 @@ export default function CountrySelect(props) {
           {option.name}
         </Box>
       )}
+      onChange={(event, newValue) => {
+        setCountId(newValue.id);
+      }}
       renderInput={(params) => (
         <TextField
           {...params}
