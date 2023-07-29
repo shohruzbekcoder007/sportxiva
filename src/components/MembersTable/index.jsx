@@ -8,7 +8,7 @@ export default function MembersTable() {
     return (
     <MainWrapper>
         <MembersTitle>
-          <Title>Xorijiy mehmonlar</Title>
+          <Title>Musoboqa ishtirokchilari</Title>
         </MembersTitle>
         <TableContainerMembers>
             <TableGuests />

@@ -10,12 +10,15 @@ import GenderSelector from '../CountrySelect/GenderSelector'
 import { useState } from 'react'
 import { registr } from '../../utils/API_urls'
 import { setRegister } from './requests'
+import { useNavigate } from "react-router-dom";
 
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
 
 export default function Register() {
+
+  const navigate = useNavigate();
 
   const [images, setImages] = useState(null)
   const [countId, setCountId] = useState(null)
@@ -37,7 +40,11 @@ export default function Register() {
       guest: guest
     }, (response) => {
       if (response.data?.id) {
-        alert("So'rovingiz qabul qilindi!!!")
+        if(guest){
+          navigate('/guests');
+        }else{
+          navigate('/members');
+        }
       }
     }, (error) => {
       console.log(error)
