@@ -8,7 +8,8 @@ import { Button } from '@mui/material'
 import SportSelector from '../CountrySelect/SportSelector'
 import GenderSelector from '../CountrySelect/GenderSelector'
 import { useState } from 'react'
-// import BirthdayField from '../CountrySelect/BirthdayField'
+import { registr } from '../../utils/API_urls'
+import { setRegister } from './requests'
 
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
@@ -17,9 +18,35 @@ const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 export default function Register() {
 
   const [images, setImages] = useState(null)
+  const [countId, setCountId] = useState(null)
+  const [countId1, setCountId1] = useState(null)
+  const [jins, setJins] = useState(null)
+  const [name1, setName1] = useState(null)
+  const [name2, setName2] = useState(null)
+  const [sana, setSana] = useState(null)
+  const [guest, setGuest] = useState(false)
+
+  const setReg = () => {
+    setRegister(registr, {
+      country: countId1,
+      birthday: sana,
+      first_name: name1,
+      last_name: name2,
+      gender: jins,
+      sport: countId,
+      guest: guest
+    }, (response) => {
+      if (response.data?.id) {
+        alert("So'rovingiz qabul qilindi!!!")
+      }
+    }, (error) => {
+      console.log(error)
+    })
+    console.log(countId, countId1, jins, name1, name2, sana)
+  }
 
   const getImages = (_images) => {
-    console.log(_images[0].photo_2)
+    console.log(_images[0])
     setImages(_images[0])
   }
 
@@ -31,46 +58,48 @@ export default function Register() {
         </RegisterTitle>
         <WelcomeContainer>
           <RegisterImage>
-            {images?<img src={images.photo_1} alt="Kurash rasmlari" />:<></>}
+            {images ? <img src={images.photo_1} alt="Kurash rasmlari" /> : <></>}
           </RegisterImage>
           <div style={{ width: "50%" }}>
             <div style={{ display: "flex", justifyContent: 'space-between', margin: "16px 0" }}>
               <div>
                 <p style={{ margin: '10px 0' }}>Davlati</p>
-                <CountrySelect title={"tanlang"} />
+                <CountrySelect setCountId1={(id) => { setCountId1(id) }} title={"tanlang"} />
               </div>
-
               <div>
                 <p style={{ margin: '10px 0' }}>Tug’ilgan sana</p>
-                {/* <BirthdayField /> */}
-                <BirthdayField placeholder="YYYY-MM-DD" />
-
+                <BirthdayField placeholder="YYYY-MM-DD" onChange={(event) => { setSana(event.target.value) }} />
               </div>
             </div>
             <div style={{ display: "flex", justifyContent: 'space-between', margin: "16px 0" }}>
               <div>
                 <p>Ism</p>
-                <RegisterInput />
+                <RegisterInput onChange={(event) => { setName1(event.target.value) }} />
               </div>
               <div>
                 <p>Familiya</p>
-                <RegisterInput />
+                <RegisterInput onChange={(event) => { setName2(event.target.value) }} />
               </div>
             </div>
             <div style={{ display: "flex", justifyContent: 'space-between', margin: "16px 0" }}>
               <div>
                 <p style={{ margin: '10px 0' }}>Sport turi</p>
-                <SportSelector title={"tanlang"} getImages={getImages}/>
+                {!guest?<SportSelector title={"tanlang"} setCountId={(id) => { setCountId(id) }} getImages={getImages} />:<></>}
               </div>
 
               <div>
                 <p style={{ margin: '10px 0' }}>Jinsi</p>
-                <GenderSelector title={'tanlang'} />
+                <GenderSelector title={'tanlang'} setJins={(id) => { setJins(id) }} />
               </div>
 
             </div>
             <div style={{ display: 'flex', alignItems: "center", justifyContent: "center", margin: "40px 0" }}>
-              <Checkbox {...label}  />
+              <Checkbox 
+                {...label}
+                onChange={e => {
+                  setGuest(e.target.checked);
+                }} 
+              />
               <RegisterGuest style={{ color: "#0093DD" }}>Mehmon sifatida ro’yxatdan o’tish</RegisterGuest>
             </div>
             <div style={{ display: 'flex', justifyContent: "space-around", margin: "80px 0" }}>
@@ -88,9 +117,11 @@ export default function Register() {
                   lineHeight: 'normal',
                   borderRadius: "12px"
                 }}
+                onClick={setReg}
               >
                 Ro’yxatdan o’tish
               </Button>
+              <a target="_blank" href={images?.file}>
               <Button
                 variant="contained"
                 color="primary"
@@ -111,20 +142,21 @@ export default function Register() {
                 </svg>
                 Nizomni yuklab olish
               </Button>
+              </a>
             </div>
-        
+
           </div>
 
         </WelcomeContainer>
         <PhotoContaner>
-            <RegisterTitle>
-              <h1>Fotogalereya</h1>
-            </RegisterTitle>
-            <div style={{display: "flex", justifyContent: "space-between"}}>
-            {images?<img style={{width: "400px", borderRadius: '10px'}}  src={images.photo_2} alt="photo_1" />:<></>}
-            {images?<img style={{width: "400px", borderRadius: '10px'}}  src={images.photo_3} alt="photo_1" />:<></>}
-            {images?<img style={{width: "400px", borderRadius: '10px'}}  src={images.photo_4} alt="photo_1" />:<></>}
-           </div>
+          <RegisterTitle>
+            <h1>Fotogalereya</h1>
+          </RegisterTitle>
+          <div style={{ display: "flex", justifyContent: "space-between" }}>
+            {images ? <img style={{ width: "400px", borderRadius: '10px' }} src={images.photo_2} alt="photo_1" /> : <></>}
+            {images ? <img style={{ width: "400px", borderRadius: '10px' }} src={images.photo_3} alt="photo_1" /> : <></>}
+            {images ? <img style={{ width: "400px", borderRadius: '10px' }} src={images.photo_4} alt="photo_1" /> : <></>}
+          </div>
         </PhotoContaner>
       </MainWrapper>
     </div>

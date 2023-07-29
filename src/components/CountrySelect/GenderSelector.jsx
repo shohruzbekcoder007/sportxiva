@@ -19,7 +19,7 @@ export default function GenderSelector(props) {
         },
         {
           name : 'Ayol',
-          id: 'Female'
+          id: 'female'
 
         }
       ]}
@@ -30,6 +30,9 @@ export default function GenderSelector(props) {
           {option.name} 
         </Box>
       )}
+      onChange={(event, newValue) => {
+        props.setJins(newValue.id)
+      }}
       renderInput={(params) => (
         <TextField
           {...params}

@@ -13,6 +13,10 @@ export default function SportSelector(props) {
   useEffect(() => {
     countryName(milliy_registr, (response) => {
       setCountries(response.data)
+      if(response.data[0]?.id){
+        props.getImages(response.data)
+      }
+      // setCountId
     }, (error) => {
       console.log(error)
     })
@@ -42,6 +46,7 @@ export default function SportSelector(props) {
       )}
       onChange={(event, newValue) => {
         setCountId(newValue.id);
+        props.setCountId(newValue.id)
       }}
       renderInput={(params) => (
         <TextField

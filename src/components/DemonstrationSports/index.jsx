@@ -35,7 +35,7 @@ export default function DemonstrationSports() {
                     <span>04</span>
                     <h5>Kamondan o’q otish</h5>
                     <DemonstrationSportsImgWrapper className="animation-img">
-                    <img src={require('../../imgs/IMG_20211117_235855_401.png')} alt="ozbek-jang-sanati" />
+                        <img src={require('../../imgs/IMG_20211117_235855_401.png')} alt="ozbek-jang-sanati" />
                     </DemonstrationSportsImgWrapper>
                 </DemonstrationSportsListItem>
                 <DemonstrationSportsListItem className="animation-info">

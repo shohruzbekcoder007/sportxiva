@@ -29,6 +29,9 @@ export default function CountrySelect(props) {
           {option.name}
         </Box>
       )}
+      onChange={(event, newValue) => {
+        props.setCountId1(newValue.id)
+      }}
       renderInput={(params) => (
         <TextField
           {...params}
