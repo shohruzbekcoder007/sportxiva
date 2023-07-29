@@ -30,7 +30,7 @@ export default function FestInfo() {
                     <FestInfoText>Festivalda ishtirok etuvchi davlatlar</FestInfoText>
                 </FestInfoImageAndText>
                 <FestInfoLinkBox>
-                    <FestInfoLink to="/">
+                    <FestInfoLink to="countrymembers">
                         Ko’rish
                     </FestInfoLink>
                 </FestInfoLinkBox>
@@ -42,7 +42,7 @@ export default function FestInfo() {
                     <FestInfoText>Xorijiy mehmonlar</FestInfoText>
                 </FestInfoImageAndText>
                 <FestInfoLinkBox>
-                    <FestInfoLink to="/">
+                    <FestInfoLink to="guests">
                         Ko’rish
                     </FestInfoLink>
                 </FestInfoLinkBox>
@@ -54,7 +54,7 @@ export default function FestInfo() {
                     <FestInfoText>Musoboqa ishtirokchilari</FestInfoText>
                 </FestInfoImageAndText>
                 <FestInfoLinkBox>
-                    <FestInfoLink to="/">
+                    <FestInfoLink to="members">
                         Ko’rish
                     </FestInfoLink>
                 </FestInfoLinkBox>
