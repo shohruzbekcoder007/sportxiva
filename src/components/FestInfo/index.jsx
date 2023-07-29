@@ -5,14 +5,13 @@ import { countData } from './requests'
 import { count_data } from '../../utils/API_urls'
 
 export default function FestInfo() {
-    
+
     const [country, setCountry] = useState(0)
     const [member, setMember] = useState(0)
     const [guest, setGuest] = useState(0)
 
     useEffect(()=> {
         countData(count_data, (response) => {
-            console.log(response.data)
             setCountry(response.data.country)
             setMember(response.data.member)
             setGuest(response.data.guests)

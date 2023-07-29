@@ -3,8 +3,9 @@ import styled from "@emotion/styled";
 export const VideoWelcomeWrapper = styled.div`
     width: auto;
     display: block;
-    margin: 0 -56px;
+    /* margin: 0 -56px; */
     position: relative;
+    padding-top: 120px;
     video {
         width: 100%;
         margin: 0 auto;

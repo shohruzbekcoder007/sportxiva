@@ -10,7 +10,7 @@ export const ChampionshipMainBlog = styled.div`
     display: block;
     position: relative;
     transition: all .3s;
-    height: 700px;
+    height: 900px;
     img {
         width: 100%;
         height: 100%;
