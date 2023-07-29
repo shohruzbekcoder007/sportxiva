@@ -1,7 +1,47 @@
 import React from 'react'
-
+import { RegisterTitle } from '../Register/styles'
+import { MainWrapper } from '../../global_styles/styles'
+import { WelcomeContainer } from '../Welcome/styles'
+import img1 from '../../imgs/osh.png'
+import { NewsImgCard, NewsRight, NewsWalksLink, NewsWalksSlickImageWrapper, NewsWalksSlickInfo, NewsWalksSlickItem, NewsWalksSlickTitle, NewsWelcomeContainer } from './styles'
+import { WalksLink, WalksSlickImageWrapper, WalksSlickInfo, WalksSlickItem, WalksSlickTitle } from '../WalksSlick/styles'
+import { Link } from 'react-router-dom'
 export default function News() {
   return (
-    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error commodi dolorem nisi alias, aut rem consectetur reiciendis numquam laudantium quasi laboriosam vel temporibus quidem non voluptatibus tenetur deserunt tempora aspernatur eius fuga minus iusto aliquam earum culpa. Suscipit molestias, quibusdam excepturi deleniti deserunt harum, voluptatum totam eum nesciunt libero optio ipsum ex omnis necessitatibus. Qui, magni quis? Praesentium rerum officiis aut blanditiis in explicabo repellat obcaecati dicta magni? Quisquam maxime nam, deserunt unde repudiandae quod veritatis molestiae voluptate quasi saepe corrupti assumenda omnis impedit ullam tenetur, iusto quos voluptates recusandae commodi odit, facilis culpa provident consequuntur. Numquam, quos. Velit repellendus corrupti cupiditate eligendi natus sapiente ipsa, nihil reiciendis. Ullam deserunt, neque velit sed quaerat aut id nemo labore est totam earum, consectetur illum nobis repellendus architecto deleniti quia odit ipsa molestiae debitis, ab optio. Reiciendis non molestias quo perspiciatis? Aut temporibus, tempore, ipsum aperiam impedit deleniti excepturi suscipit rerum corrupti, cum sequi numquam? Suscipit dignissimos soluta sequi a illum harum quidem quam nulla. Labore quia quod doloremque, voluptates exercitationem ratione eveniet. Aliquam ut vero cupiditate sunt eveniet doloribus iusto tempora cumque aperiam commodi odio porro quia expedita ratione dolore voluptas blanditiis, beatae sed quaerat magnam. Nulla itaque ut modi animi fugiat distinctio ullam reprehenderit commodi nobis. Tempore velit suscipit, aspernatur eaque culpa temporibus non consequatur veritatis vero inventore ipsa autem, ea eveniet illum eius error dolore quis aperiam deleniti, fugiat blanditiis quibusdam! Veritatis, minima pariatur. Aspernatur, assumenda laudantium. Eos ad illum tempora, iure quis est aliquam, facere voluptatum officia, alias unde iste nostrum optio ipsam. Aperiam nam praesentium modi tempora debitis incidunt. Fugiat odit animi sunt ratione laboriosam? Suscipit odit, necessitatibus officia, accusantium fugit nulla aperiam veritatis nemo eaque consectetur ut consequuntur culpa magnam quisquam pariatur doloremque impedit alias recusandae magni laboriosam rerum quis! Animi voluptas vel non id sunt, sapiente placeat, neque sequi tempora ipsa voluptatum deserunt temporibus molestiae omnis earum, ea error aliquid? Explicabo facilis, atque totam tempore ea labore eius sint quasi, eligendi consectetur similique quas voluptates! Ullam quibusdam totam dolorem eum eaque illo, quos nisi, at rem quas quia iure cumque aliquid saepe quasi adipisci culpa corrupti, quaerat perspiciatis vitae? Fugiat autem dolor ut voluptate beatae praesentium! Eligendi nostrum enim eaque nisi ea. Adipisci dolor quam similique a quae perspiciatis dicta qui eligendi. Magni velit aliquam, porro esse dolorum laudantium illum temporibus labore est eum iusto ea. Velit illo cupiditate mollitia! Totam numquam quas at facilis natus corrupti ex velit, saepe minima exercitationem ullam, eum optio qui eveniet iure modi omnis debitis laborum illum fuga repellendus alias officiis amet quae? Fugit nulla minus, deleniti quo ea officia voluptas commodi. Quae magnam nisi eligendi totam provident est recusandae cupiditate dolorem nam unde commodi repudiandae, amet exercitationem. Laboriosam incidunt distinctio nemo obcaecati laudantium libero illo, sapiente, voluptate dicta consequatur voluptatum amet aliquam repellat. Temporibus fugiat facere necessitatibus, laboriosam consectetur et eveniet sint doloremque magni soluta libero quibusdam? Ullam repudiandae repellendus, corrupti vero rerum perspiciatis ad quidem. Et magnam voluptate unde, recusandae vel quae asperiores? Amet soluta omnis asperiores.</div>
+    <div>
+      <MainWrapper>
+        <RegisterTitle>
+          <h1>Yangiliklar</h1>
+        </RegisterTitle>
+        <WelcomeContainer>
+          <NewsImgCard >
+            <img src={img1} alt="" />
+          </NewsImgCard>
+          <NewsRight>
+            <h1>Osh Musobaqasi</h1>
+            <p>Lorem ipsum dolor sit amet consectetur. Mattis ligula lectus sem eu pretium scelerisque. Est id sed pellentesque nec. Eu eget massa blandit nulla purus lectus hendrerit est. Vestibulum nunc viverra dignissim nulla nisi pharetra amet in placerat. Augue ut vitae integer morbi. Turpis rutrum tincidunt morbi convallis rhoncus justo. Leo molestie duis urna pellentesque. Aliquet diam risus elementum lectus dolor id mauris. Nullam fringilla in phasellus id eu lobortis. Id mauris venenatis enim ultrices fermentum ullamcorper pulvinar. Amet fringilla nulla eu amet ultrices fermentum sed enim.</p>
+          </NewsRight>
+        </WelcomeContainer>
+
+        <NewsWelcomeContainer>
+        {
+          [1,2,3,4,5,6,7,8].map(item => {
+            return (
+               <NewsWalksSlickItem>
+                <NewsWalksSlickImageWrapper>
+                  <img src={require("../../imgs/oshsayli.png")} alt="Uzbekistan_Airways" />
+                </NewsWalksSlickImageWrapper>
+                <NewsWalksSlickTitle>Osh musoboqasi</NewsWalksSlickTitle>
+                <NewsWalksSlickInfo>
+                  Lorem ipsum dolor sit amet consectetur. Mi adipiscing vitae arcu eget vel euismod vulputate. Amet leo enim adipiscing ac leo diam odio molestie faucibus. Enim.
+                </NewsWalksSlickInfo>
+                <NewsWalksLink to={`/newsinfo/${item}`}>Batafsil</NewsWalksLink>
+              </NewsWalksSlickItem>
+            )
+          })
+        }
+        </NewsWelcomeContainer>
+      </MainWrapper>
+    </div>
   )
 }

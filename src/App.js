@@ -6,6 +6,7 @@ import { ThemeProvider as MuiTheme } from '@mui/material/styles'
 import muiTheme from './theme/muiTheme'
 import Main from './components/Main';
 import News from './components/News';
+import NewsInfo from './components/NewsInfo';
 import Events from './components/Events';
 import MainRegistr from './components/MainRegistr';
 import MainOrganizers from './components/Organizers';
@@ -30,6 +31,7 @@ function App() {
               <Route path='guests' element={<MainGuests/>}/>
               <Route path='members' element={<MainMembers/>}/>
               <Route path='countrymembers' element={<MainCountryMembers/>}/>
+              <Route path='/newsinfo/:id' element={<NewsInfo/>}/>
             </Route>
           </Routes>
         </BrowserRouter>
