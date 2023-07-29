@@ -3,7 +3,7 @@ import bgi from '../../imgs/capa1.png'
 
 export const WelcomeWrapper = styled.div`
     width: 100%;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-image: url(${bgi});
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -12,7 +12,8 @@ export const WelcomeWrapper = styled.div`
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 120px;
+    /* padding-top: 120px; */
+    padding: 150px 0;
 `
 
 export const WelcomeContainer = styled.div`
@@ -36,7 +37,7 @@ export const WelcomeInfo = styled.div`
 export const WelcomeImage = styled.div`
     flex-shrink: 0;
     img {
-        /* width: 688px; */
+        width: 500px;
         /* height: 552px; */
         object-fit: cover;
         border-radius: 15px;

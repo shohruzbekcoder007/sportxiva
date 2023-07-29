@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import videoBg from "../../media/BUYUK_XIVAGA_SAYOHAT__ICHAN_QAL`AGA_SAYOHAT__XIVA_XONLIGI_HAQIDA.mp4"
+import videoBg from "../../media/bg_video_asosiy.mp4"
 import { VideoWelcomeDateContainer, VideoWelcomeDateWrapper, VideoWelcomeWrapper } from './styles'
 import { MainWrapper } from '../../global_styles/styles'
 
@@ -28,7 +28,7 @@ export default function VideoWelcome() {
   }, []);
 
   return (
-    <MainWrapper>
+    // <MainWrapper>
       <VideoWelcomeWrapper>
           <video src={videoBg} autoPlay loop muted />
           <VideoWelcomeDateWrapper>
@@ -38,6 +38,6 @@ export default function VideoWelcome() {
             </VideoWelcomeDateContainer>
           </VideoWelcomeDateWrapper>
       </VideoWelcomeWrapper>
-    </MainWrapper>
+    // </MainWrapper>
   )
 }

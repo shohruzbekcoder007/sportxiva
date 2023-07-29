@@ -33,3 +33,19 @@ h1,h2,h3,h4,h5,h6,p{
 a {
   text-decoration: none;
 }
+
+.slick-slide {
+  margin: 0 25px;
+}
+
+.sponsors-slick .slick-track {
+  height: 140px;
+}
+
+.walks-slick .slick-track {
+  height: 360px;
+}
+
+.slick-arrow {
+  display: none !important;
+}

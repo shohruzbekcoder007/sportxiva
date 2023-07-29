@@ -9,7 +9,7 @@ export default function Welcome() {
         <MainWrapper>
           <WelcomeContainer>
           <WelcomeInfo>
-            <h1>Xalqaro etnosport festivaliga xush kelibsiz</h1>
+            <h1>Xalqaro etnosport <br/> festivaliga xush kelibsiz</h1>
             <Button 
               variant="contained"
               color="primary"
