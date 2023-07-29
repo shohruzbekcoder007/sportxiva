@@ -1,5 +1,5 @@
 import React from 'react'
-import { RegisterGuest, RegisterImage, RegisterInput, RegisterTitle } from './styles'
+import { RegisterGuest, RegisterImage, RegisterInput, RegisterTitle, BirthdayField } from './styles'
 import { WelcomeContainer } from '../Welcome/styles'
 import { MainWrapper } from '../../global_styles/styles'
 import CountrySelect from '../CountrySelect/CountrySelect'
@@ -8,7 +8,7 @@ import { Button } from '@mui/material'
 import SportSelector from '../CountrySelect/SportSelector'
 import GenderSelector from '../CountrySelect/GenderSelector'
 import { useState } from 'react'
-import BirthdayField from '../CountrySelect/BirthdayField'
+// import BirthdayField from '../CountrySelect/BirthdayField'
 
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
@@ -42,7 +42,9 @@ export default function Register() {
 
               <div>
                 <p style={{ margin: '10px 0' }}>Tug’ilgan sana</p>
-                <BirthdayField />
+                {/* <BirthdayField /> */}
+                <BirthdayField placeholder="YYYY-MM-DD" />
+
               </div>
             </div>
             <div style={{ display: "flex", justifyContent: 'space-between', margin: "16px 0" }}>

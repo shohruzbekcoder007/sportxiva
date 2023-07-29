@@ -26,15 +26,25 @@ export const RegisterImage = styled.div `
 export const RegisterInput = styled.input `
   width: 300px;
   height: 54px;
-  border: 1px solid  ${props => props.theme.text.bg};;
+  border: 1px solid  ${props => props.theme.text.bg};
   border-radius: 5px;
-  background-color:  ${props => props.theme.text.bg};;
+  background-color:  ${props => props.theme.text.bg};
   outline: none;
   font-size: 20px;
   padding: 0 10px;
   color: gray;
 `
-
+export const BirthdayField = styled.input `
+  width: 300px;
+  height: 54px;
+  border: 1px solid  ${props => props.theme.text.bg};
+  border-radius: 5px;
+  background-color:  white;
+  outline: none;
+  font-size: 20px;
+  padding: 0 10px;
+  color: gray;
+`
 
 export const RegisterGuest = styled.p `
 color: ${props => props.theme.color.color1};
