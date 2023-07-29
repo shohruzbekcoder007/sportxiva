@@ -54,3 +54,7 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 `
+
+export const PhotoContaner = styled.div `
+  padding-bottom: 150px;
+`

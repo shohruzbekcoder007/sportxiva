@@ -1,5 +1,5 @@
 import React from 'react'
-import { RegisterGuest, RegisterImage, RegisterInput, RegisterTitle, BirthdayField } from './styles'
+import { RegisterGuest, RegisterImage, RegisterInput, RegisterTitle, BirthdayField, PhotoContaner } from './styles'
 import { WelcomeContainer } from '../Welcome/styles'
 import { MainWrapper } from '../../global_styles/styles'
 import CountrySelect from '../CountrySelect/CountrySelect'
@@ -116,7 +116,7 @@ export default function Register() {
           </div>
 
         </WelcomeContainer>
-        <div>
+        <PhotoContaner>
             <RegisterTitle>
               <h1>Fotogalereya</h1>
             </RegisterTitle>
@@ -125,7 +125,7 @@ export default function Register() {
             {images?<img style={{width: "400px", borderRadius: '10px'}}  src={images.photo_3} alt="photo_1" />:<></>}
             {images?<img style={{width: "400px", borderRadius: '10px'}}  src={images.photo_4} alt="photo_1" />:<></>}
            </div>
-        </div>
+        </PhotoContaner>
       </MainWrapper>
     </div>
   )
