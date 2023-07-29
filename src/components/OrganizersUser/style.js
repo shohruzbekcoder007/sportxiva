@@ -11,11 +11,12 @@ export const OrganizersContainer = styled.div `
     display: flex;
     gap: 20px;
     padding-bottom: 150px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 `
 
 export const OrganizersPhoto = styled.div `
-    width: 339px;
-    height: 370px;
+    width: 330px;
     img {
         width: 332px;
         height: 236px;

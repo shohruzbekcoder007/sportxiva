@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import { FooterBottom, FooterCommentForm, FooterContainer, FooterImageWrapper, FooterLeft, FooterReight, FooterReightLink, FooterReightNav, FooterWrapper } from './styles'
 import { MainWrapper } from '../../global_styles/styles'
 import { Button } from '@mui/material'
-import { countCommet } from './requests'
-import { ideaguests } from '../../utils/API_urls'
+import { countCommet, getMap } from './requests'
+import { footer_map, ideaguests } from '../../utils/API_urls'
 
 export default function Footer() {
 
@@ -22,6 +22,16 @@ export default function Footer() {
             console.log(error)
         })
     }
+
+    const [map, setFooterMap] = React.useState([])
+    React.useEffect(() => {
+        getMap(footer_map, (response) => {
+
+            setFooterMap(response.data[0])
+        }, (error) => {
+            console.log(error)
+        })
+        }, [])
 
   return (
     <FooterWrapper>
@@ -63,7 +73,7 @@ export default function Footer() {
                         <FooterReightLink>Tashkilotchilar</FooterReightLink>
                     </FooterReightNav>
                     <FooterImageWrapper>
-                        <img src={require('../../imgs/map.png')} alt="footer image" />
+                        <img src={map.photo} alt="footer image" />
                     </FooterImageWrapper>
                 </FooterReight>
             </FooterContainer>
