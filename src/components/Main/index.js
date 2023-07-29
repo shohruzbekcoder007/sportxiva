@@ -24,7 +24,7 @@ export default function Main() {
         <Sponsors/>
         <Walks/>
         <FolkGames/>
-        <Footer/>
+        {/* <Footer/> */}
     </>
   ) 
 }
