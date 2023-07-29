@@ -13,6 +13,7 @@ import MainOrganizers from './components/Organizers';
 import MainGuests from './components/MainGuests';
 import MainMembers from './components/MainMembers';
 import MainCountryMembers from './components/MainCountryMembers';
+import MainWrapper from './components/MainWrapper';
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
       <ThemeProvider theme={defaultTheme}>
         <BrowserRouter>
           <Routes>
-            <Route path='/' element={<Nav/>}>
+            <Route path='/' element={<MainWrapper/>}>
               <Route index element={<Main/>}/>
               <Route path='/news' element={<News/>}/>
               <Route path='/events' element={<Events/>}/>

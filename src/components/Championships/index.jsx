@@ -19,9 +19,9 @@ export default function Championships() {
             </MainWrapper>
             <ChampionshipMainBlog>
                 {bgImg === 1 ? <img src={img1} alt='main bg' />:<></>}
-                {bgImg === 2 ? <img src={img2} alt='main bg' />:<></>}
+                {bgImg === 2 ? <img src={img4} alt='main bg' />:<></>}
                 {bgImg === 3 ? <img src={img3} alt='main bg' />:<></>}
-                {bgImg === 4 ? <img src={img4} alt='main bg' />:<></>}
+                {bgImg === 4 ? <img src={img2} alt='main bg' />:<></>}
                 <ChampionshipMainBlogContainer>
                     <ChampionshipMainBlogBox>
                         <ChampionshipBlogBox>

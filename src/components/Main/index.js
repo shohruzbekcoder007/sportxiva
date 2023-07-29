@@ -14,7 +14,7 @@ import Footer from '../Footer'
 export default function Main() {
   return (
     <>
-        <Header/>
+        {/* <Header/> */}
         <VideoWelcome/>
         <Welcome/>
         <FestInfo/>
