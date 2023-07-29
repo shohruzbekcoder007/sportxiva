@@ -15,7 +15,6 @@ export default function Main() {
   return (
     <>
         {/* <Header/> */}
-        <Header/>
         <VideoWelcome/>
         <Welcome/>
         <FestInfo/>
@@ -26,7 +25,6 @@ export default function Main() {
         <Walks/>
         <FolkGames/>
         {/* <Footer/> */}
-        <Footer/>
     </>
   ) 
 }
