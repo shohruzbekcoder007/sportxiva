@@ -1,4 +1,16 @@
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
+import bgi from '../../imgs/capa1.png'
+
+export const DemonstrationSportsWrapper = styled.div`
+    background-image: url(${bgi});
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+`
 
 export const DemonstrationSportsTitle = styled.div`
     padding: 150px 0;

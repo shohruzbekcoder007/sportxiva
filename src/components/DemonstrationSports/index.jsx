@@ -1,10 +1,11 @@
 import React from 'react'
 import { MainWrapper, Title } from '../../global_styles/styles'
-import { DemonstrationSportsContainer, DemonstrationSportsImgWrapper, DemonstrationSportsList, DemonstrationSportsListItem, DemonstrationSportsTitle } from './styles'
+import { DemonstrationSportsContainer, DemonstrationSportsImgWrapper, DemonstrationSportsList, DemonstrationSportsListItem, DemonstrationSportsTitle, DemonstrationSportsWrapper } from './styles'
 
 export default function DemonstrationSports() {
   return (
-    <MainWrapper>
+    <DemonstrationSportsWrapper>
+        <MainWrapper>
         <DemonstrationSportsTitle>
             <Title>Ko’rgazmali sportlar</Title>
         </DemonstrationSportsTitle>
@@ -48,5 +49,6 @@ export default function DemonstrationSports() {
             </DemonstrationSportsList>
         </DemonstrationSportsContainer>
     </MainWrapper>
+    </DemonstrationSportsWrapper>
   )
 }
