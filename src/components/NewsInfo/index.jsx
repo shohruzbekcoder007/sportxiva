@@ -4,7 +4,7 @@ import { RegisterTitle } from '../Register/styles'
 import img1 from '../../imgs/osh.png'
 import { NewsInfoCard, NewsInfoImg, NewsInfoImgCard, NewsInfoText } from './styles'
 
-export default function index() {
+export default function NewsInfo() {
   return (
     <div>
       <MainWrapper>

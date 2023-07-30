@@ -31,8 +31,8 @@ export default function Header() {
                     <img src={require('../../imgs/image1.png')} alt="logo" />
                     <MenuList>
                         <MenuItem><MenuItemLink to="/">Asosiy</MenuItemLink></MenuItem>
-                        <MenuItem><MenuItemLink to="/news">Yangiliklar</MenuItemLink></MenuItem>
-                        <MenuItem><MenuItemLink to="/">Tadbirlar</MenuItemLink></MenuItem>
+                        <MenuItem><MenuItemLink to="news">Yangiliklar</MenuItemLink></MenuItem>
+                        <MenuItem><MenuItemLink to="events">Tadbirlar</MenuItemLink></MenuItem>
                         <MenuItem><MenuItemLink to="organizers">Tashkilotchilar</MenuItemLink></MenuItem>
                     </MenuList>
                     <span>uz</span>

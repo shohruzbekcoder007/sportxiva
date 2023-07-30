@@ -31,7 +31,7 @@ function App() {
               <Route path='guests' element={<MainGuests/>}/>
               <Route path='members' element={<MainMembers/>}/>
               <Route path='countrymembers' element={<MainCountryMembers/>}/>
-              <Route path='/newsinfo/:id' element={<NewsInfo/>}/>
+              <Route path='/news/:id' element={<NewsInfo/>}/>
             </Route>
           </Routes>
         </BrowserRouter>

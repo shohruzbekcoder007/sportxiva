@@ -35,7 +35,7 @@ export default function News() {
                 <NewsWalksSlickInfo>
                   Lorem ipsum dolor sit amet consectetur. Mi adipiscing vitae arcu eget vel euismod vulputate. Amet leo enim adipiscing ac leo diam odio molestie faucibus. Enim.
                 </NewsWalksSlickInfo>
-                <NewsWalksLink to={`/newsinfo/${item}`}>Batafsil</NewsWalksLink>
+                <NewsWalksLink to={`/news/${item}`}>Batafsil</NewsWalksLink>
               </NewsWalksSlickItem>
             )
           })

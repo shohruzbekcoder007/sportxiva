@@ -26,7 +26,6 @@ export default function Footer() {
     const [map, setFooterMap] = React.useState([])
     React.useEffect(() => {
         getMap(footer_map, (response) => {
-
             setFooterMap(response.data[0])
         }, (error) => {
             console.log(error)

@@ -8,8 +8,8 @@ export const WalksSlickItem = styled.div`
 `
 
 export const WalksSlickImageWrapper = styled.div`
-    width: 379px;
-    height: 252.667px;
+    width: 100%;
+    height: 250px;
     flex-shrink: 0;
     img {
         width: 100%;
@@ -42,10 +42,13 @@ export const WalksLink = styled(Link)`
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 12px;
     background: #0093DD;
     width: 100%;
-    padding: 26px 123px;
+    height: 86px;
+    /* padding: 26px 123px; */
     margin-top: 36px;
 `
