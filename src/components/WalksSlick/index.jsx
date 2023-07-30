@@ -6,7 +6,7 @@ import { WalksLink, WalksSlickImageWrapper, WalksSlickInfo, WalksSlickItem, Walk
 import { getSayil } from "./requests";
 import { sayil } from "../../utils/API_urls";
 
-export default function WalksSlick() {
+export default function FolkGamesSlick() {
 
     const [sayils, setSayils] = useState([])
 
@@ -21,12 +21,13 @@ export default function WalksSlick() {
     const settings = {
         dots: true,
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
         speed: 2000,
         autoplaySpeed: 2000,
-        cssEase: "linear"
+        cssEase: "linear",
+        arrows: false,
     };
 
     return (

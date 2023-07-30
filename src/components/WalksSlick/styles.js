@@ -9,7 +9,7 @@ export const WalksSlickItem = styled.div`
 
 export const WalksSlickImageWrapper = styled.div`
     width: 100%;
-    height: 250px;
+    height: 200px;
     img {
         width: 100%;
         height: 100%;
@@ -18,7 +18,7 @@ export const WalksSlickImageWrapper = styled.div`
 
 export const WalksSlickTitle = styled.h5`
     color: #1F1F1F;
-    font-size: 32px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -28,7 +28,7 @@ export const WalksSlickTitle = styled.h5`
 
 export const WalksSlickInfo = styled.p`
     color: #5A5A5A;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -37,7 +37,7 @@ export const WalksSlickInfo = styled.p`
 export const WalksLink = styled(Link)`
     color: #FFF;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -47,6 +47,6 @@ export const WalksLink = styled(Link)`
     border-radius: 12px;
     background: #0093DD;
     width: 100%;
-    height: 86px;
+    height: 70px;
     margin-top: 36px;
 `
