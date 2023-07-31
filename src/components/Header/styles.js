@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 export const HeaderWrapper = styled.header`
     width: 100%;
@@ -33,7 +33,7 @@ export const MenuItem = styled.li`
     }
 `
 
-export const MenuItemLink = styled(Link)`
+export const MenuItemLink = styled(NavLink)`
     line-height: normal;
     font-style: normal;
     font-size: 18px;

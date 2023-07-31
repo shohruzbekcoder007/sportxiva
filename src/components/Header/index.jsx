@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { HeaderContainer, HeaderWrapper, MenuItem, MenuItemLink, MenuList } from './styles'
 import { MainWrapper } from '../../global_styles/styles'
+import LanguageMenus from '../LanguageMenus';
 
 export default function Header() {
 
@@ -35,7 +36,7 @@ export default function Header() {
                         <MenuItem><MenuItemLink to="events">Tadbirlar</MenuItemLink></MenuItem>
                         <MenuItem><MenuItemLink to="organizers">Tashkilotchilar</MenuItemLink></MenuItem>
                     </MenuList>
-                    <span>uz</span>
+                    <LanguageMenus/>
                 </HeaderContainer>
             </MainWrapper>
         </HeaderWrapper>

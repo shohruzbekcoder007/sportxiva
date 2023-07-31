@@ -4,13 +4,14 @@ import { WelcomeContainer } from '../Welcome/styles'
 import { MainWrapper } from '../../global_styles/styles'
 import CountrySelect from '../CountrySelect/CountrySelect'
 import Checkbox from '@mui/material/Checkbox';
-import { Button } from '@mui/material'
+import { Button, TextField } from '@mui/material'
 import SportSelector from '../CountrySelect/SportSelector'
 import GenderSelector from '../CountrySelect/GenderSelector'
 import { useState } from 'react'
 import { registr } from '../../utils/API_urls'
 import { setRegister } from './requests'
 import { useNavigate } from "react-router-dom";
+import BasicDatePicker from './BasicDatePicker'
 
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
@@ -74,18 +75,18 @@ export default function Register() {
                 <CountrySelect setCountId1={(id) => { setCountId1(id) }} title={"tanlang"} />
               </div>
               <div>
-                <p style={{ margin: '10px 0' }}>Tug’ilgan sana</p>
-                <BirthdayField placeholder="YYYY-MM-DD" onChange={(event) => { setSana(event.target.value) }} />
+                <p style={{ margin: '10px 0 2px 0' }}>Tug’ilgan sana</p>
+                <BasicDatePicker/>
               </div>
             </div>
             <div style={{ display: "flex", justifyContent: 'space-between', margin: "16px 0" }}>
               <div>
-                <p>Ism</p>
-                <RegisterInput onChange={(event) => { setName1(event.target.value) }} />
+                <p style={{ margin: '0 0 10px 0' }}>Ism</p>
+                <TextField sx={{width: '300px'}} id="outlined-basic" label="Sinmingiz" variant="outlined" onChange={(event) => { setName1(event.target.value) }}/>
               </div>
               <div>
-                <p>Familiya</p>
-                <RegisterInput onChange={(event) => { setName2(event.target.value) }} />
+                <p style={{ margin: '0 0 10px 0' }}>Familiya</p>
+                <TextField sx={{width: '300px'}} id="outlined-basic" label="Familiyangiz" variant="outlined" onChange={(event) => { setName2(event.target.value) }}/>
               </div>
             </div>
             <div style={{ display: "flex", justifyContent: 'space-between', margin: "16px 0" }}>

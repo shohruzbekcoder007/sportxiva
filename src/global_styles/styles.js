@@ -7,11 +7,13 @@ export const MainWrapper = styled.div`
     @media (max-width: 1512px){
         width: 100%;
     }
+    @media (max-width: 600px){
+        padding: 0 20px;
+    }
 `
 
 export const Title = styled.h3`
     color: ${props => props.theme.color.color1};
-    font-family: Nunito Sans;
     font-size: 56px;
     font-style: normal;
     font-weight: 800;

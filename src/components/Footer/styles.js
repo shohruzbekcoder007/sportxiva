@@ -10,6 +10,11 @@ export const FooterContainer = styled.div`
     align-items: flex-start;
     justify-content: space-between;
     padding-top: 56px;
+    @media (max-width: 1512px){
+        flex-direction: column-reverse;
+        gap: 56px;
+        align-items: center;
+    }
 `
 export const FooterBottom = styled.div`
     padding: 56px 0;
@@ -32,6 +37,10 @@ export const FooterLeft = styled.div`
         line-height: normal;
         margin-bottom: 43px;
     }
+    @media (max-width: 600px){
+        width: 100%;
+        padding: 0 20px;
+    }
 `
 
 export const FooterReight = styled.div`
@@ -43,6 +52,9 @@ export const FooterCommentForm = styled.div`
     flex-direction: column;
     gap: 25px;
     margin-bottom: 37px;
+    @media (max-width: 600px){
+        width: 100%;
+    }
     input {
         width: 333px;
         height: 64px;
@@ -52,6 +64,9 @@ export const FooterCommentForm = styled.div`
         border: none;
         outline: none;
         padding: 0 16px;
+        @media (max-width: 1512px){
+            width: 100%;
+        }
     }
     textarea{
         width: 569px;
@@ -62,6 +77,10 @@ export const FooterCommentForm = styled.div`
         padding: 20px 16px;
         border: none;
         outline: none;
+        @media (max-width: 600px){
+            width: 100%;
+            height: 180px;
+        }
     }
 `
 
@@ -69,6 +88,23 @@ export const FooterImageWrapper = styled.div`
     padding: 44px 85px;
     border-radius: 15px;
     background-color: #fff;
+    @media (max-width: 850px){
+        padding: 40px;
+    }
+    @media (max-width: 550px){
+        padding: 10px;
+        width: max-content;
+        margin: 0 auto;
+    }
+    img {
+        @media (max-width: 760px){
+            width: 100%;
+        }
+        @media (max-width: 550px){
+            width: 260px;
+            display: inline-block
+        }
+    }
 `
 
 export const FooterReightNav = styled.div`
@@ -77,6 +113,12 @@ export const FooterReightNav = styled.div`
     align-items: center;
     justify-content: space-between;
     padding-bottom: 54px;
+    @media (max-width: 550px){
+        flex-wrap: wrap;
+        gap: 20px;
+        margin: 0;
+        justify-content: center;
+    }
 `
 
 export const FooterReightLink = styled(Link)`
@@ -87,4 +129,5 @@ export const FooterReightLink = styled(Link)`
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin: 0 10px;
 `
