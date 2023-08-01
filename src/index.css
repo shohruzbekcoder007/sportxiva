@@ -78,3 +78,10 @@ a {
 a.active {
   color: #0093DD;
 }
+
+
+@media screen and (max-width: 1370px) {
+  .sponsors-slick .slick-slide img {
+    width: 240px;
+  }
+}
