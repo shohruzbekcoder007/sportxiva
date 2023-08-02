@@ -1,4 +1,4 @@
-export const host = "http://api.etnofest.uz"
+export const host = "http://192.168.0.114:8085/"
 
 export const count_data = '/count_data/'
 export const country_name = '/country_name/'

@@ -1,5 +1,5 @@
 import React from 'react'
-import { RegisterGuest, RegisterImage, RegisterInput, RegisterTitle, BirthdayField, PhotoContaner } from './styles'
+import { RegisterGuest, RegisterImage, RegisterInput, RegisterTitle, BirthdayField, PhotoContaner, RegisterRight, RegisterContainer, RegisterRightInputs, RegisterRightBtn } from './styles'
 import { WelcomeContainer } from '../Welcome/styles'
 import { MainWrapper } from '../../global_styles/styles'
 import CountrySelect from '../CountrySelect/CountrySelect'
@@ -64,12 +64,12 @@ export default function Register() {
         <RegisterTitle>
           <h1>Ro’yxatdan o’tish</h1>
         </RegisterTitle>
-        <WelcomeContainer>
+        <RegisterContainer>
           <RegisterImage>
             {images ? <img src={images.photo_1} alt="Kurash rasmlari" /> : <></>}
           </RegisterImage>
-          <div style={{ width: "50%" }}>
-            <div style={{ display: "flex", justifyContent: 'space-between', margin: "16px 0" }}>
+          <RegisterRight>
+            <RegisterRightInputs>
               <div>
                 <p style={{ margin: '10px 0' }}>Davlati</p>
                 <CountrySelect setCountId1={(id) => { setCountId1(id) }} title={"tanlang"} />
@@ -78,18 +78,18 @@ export default function Register() {
                 <p style={{ margin: '10px 0 2px 0' }}>Tug’ilgan sana</p>
                 <BasicDatePicker/>
               </div>
-            </div>
-            <div style={{ display: "flex", justifyContent: 'space-between', margin: "16px 0" }}>
+            </RegisterRightInputs>
+            <RegisterRightInputs>
               <div>
                 <p style={{ margin: '0 0 10px 0' }}>Ism</p>
-                <TextField sx={{width: '300px'}} id="outlined-basic" label="Sinmingiz" variant="outlined" onChange={(event) => { setName1(event.target.value) }}/>
+                <TextField sx={{width: '300px'}} id="outlined-basic" label="ismingiz" variant="outlined" onChange={(event) => { setName1(event.target.value) }}/>
               </div>
               <div>
                 <p style={{ margin: '0 0 10px 0' }}>Familiya</p>
                 <TextField sx={{width: '300px'}} id="outlined-basic" label="Familiyangiz" variant="outlined" onChange={(event) => { setName2(event.target.value) }}/>
               </div>
-            </div>
-            <div style={{ display: "flex", justifyContent: 'space-between', margin: "16px 0" }}>
+            </RegisterRightInputs>
+            <RegisterRightInputs>
               <div>
                 <p style={{ margin: '10px 0' }}>Sport turi</p>
                 {!guest?<SportSelector title={"tanlang"} setCountId={(id) => { setCountId(id) }} getImages={getImages} />:<></>}
@@ -100,7 +100,7 @@ export default function Register() {
                 <GenderSelector title={'tanlang'} setJins={(id) => { setJins(id) }} />
               </div>
 
-            </div>
+            </RegisterRightInputs>
             <div style={{ display: 'flex', alignItems: "center", justifyContent: "center", margin: "40px 0" }}>
               <Checkbox 
                 {...label}
@@ -110,7 +110,7 @@ export default function Register() {
               />
               <RegisterGuest style={{ color: "#0093DD" }}>Mehmon sifatida ro’yxatdan o’tish</RegisterGuest>
             </div>
-            <div style={{ display: 'flex', justifyContent: "space-around", margin: "80px 0" }}>
+            <RegisterRightBtn>
               <Button
                 variant="contained"
                 color="primary"
@@ -151,11 +151,10 @@ export default function Register() {
                 Nizomni yuklab olish
               </Button>
               </a>
-            </div>
+            </RegisterRightBtn>
+          </RegisterRight>
 
-          </div>
-
-        </WelcomeContainer>
+        </RegisterContainer>
         <PhotoContaner>
           <RegisterTitle>
             <h1>Fotogalereya</h1>
