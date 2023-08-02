@@ -24,12 +24,19 @@ export const HeaderContainer = styled.div`
     @media (max-width: 670px){
         height: 80px;
     }
+`
+
+export const Logos = styled.div`
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
     img {
+        height: 90px;
         @media (max-width: 670px){
             width: 70px;
         }
     }
-    
 `
 
 export const MenuList = styled.ul`
@@ -53,7 +60,7 @@ export const MenuItem = styled.li`
     :hover {
         color: ${props => props.theme.color.color2};
     }
-    @media (max-width: 1000px) {
+    @media (max-width: 1450px) {
         margin: 0 10px;
     }
 `
@@ -70,7 +77,7 @@ export const MenuItemLink = styled(NavLink)`
 export const TreeDots = styled.span`
   display: none;
   cursor: pointer;
-  @media (max-width: 685px) {
+  @media (max-width: 1075px) {
     display: block;
   }
 `

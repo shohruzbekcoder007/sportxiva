@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { HeaderContainer, HeaderWrapper, MenuItem, MenuItemLink, MenuList, TreeDots } from './styles'
+import { HeaderContainer, HeaderWrapper, Logos, MenuItem, MenuItemLink, MenuList, TreeDots } from './styles'
 import { MainWrapper } from '../../global_styles/styles'
 import LanguageMenus from '../LanguageMenus';
 
@@ -29,7 +29,11 @@ export default function Header() {
         <HeaderWrapper type={headerType}>
             <MainWrapper>
                 <HeaderContainer>
-                    <img src={require('../../imgs/image1.png')} alt="logo" />
+                    <Logos>
+                        <img src={require('../../imgs/new_logo.jpg')} alt="logo" />
+                        <img src={require('../../imgs/new_logo2.jpg')} alt="logo" />
+                        <img src={require('../../imgs/removebg-preview2.png')} alt="logo" />
+                    </Logos>
                     <MenuList>
                         <MenuItem><MenuItemLink to="/">Asosiy</MenuItemLink></MenuItem>
                         <MenuItem><MenuItemLink to="news">Yangiliklar</MenuItemLink></MenuItem>
