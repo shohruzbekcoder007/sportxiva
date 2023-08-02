@@ -14,6 +14,9 @@ export const WelcomeWrapper = styled.div`
     flex-wrap: wrap;
     /* padding-top: 120px; */
     padding: 150px 0;
+    @media (max-width: 800px) {
+        padding: 50px 0;
+    }
 `
 
 export const WelcomeContainer = styled.div`
@@ -21,6 +24,11 @@ export const WelcomeContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 800px) {
+        flex-direction: column-reverse;
+        gap: 30px;
+        justify-content: center;
+    }
 `
 
 export const WelcomeInfo = styled.div`
@@ -31,6 +39,9 @@ export const WelcomeInfo = styled.div`
         font-weight: 700;
         line-height: normal;
         margin-bottom: 72px;
+        @media (max-width: 950px) {
+            font-size: 46px;
+        }
     }
 `
 
@@ -42,5 +53,8 @@ export const WelcomeImage = styled.div`
         object-fit: cover;
         border-radius: 15px;
         background: #D9D9D9;
+        @media (max-width: 950px) {
+            width: 400px;
+        }
     }
 `

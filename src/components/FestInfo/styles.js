@@ -6,6 +6,12 @@ export const FestInfoContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 1150px){
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        padding: 50px 0;
+    }
 `
 
 export const FestInfoBox = styled.div`
@@ -15,6 +21,9 @@ export const FestInfoBox = styled.div`
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media (max-width: 952px){
+        min-height: auto;
+    }
 `
 
 export const FestInfoImageAndText = styled.div`
@@ -44,6 +53,9 @@ export const FestInfoText = styled.p`
     font-weight: 400;
     line-height: normal;
     color: ${props => props.theme.text.font};
+    @media (max-width: 952px){
+        padding-bottom: 20px;
+    }
 `
 
 export const FestInfoLinkBox = styled.div`

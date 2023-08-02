@@ -9,10 +9,16 @@ export const OurHistoryContainer = styled.div`
     gap: 25px;
     justify-content: center;
     padding-bottom: 150px;
+    @media (max-width: 1200px){
+        flex-wrap: wrap;
+    }
 `
 
 export const OurHistoryItem = styled.div`
     width: 33%;
+    @media (max-width: 1200px){
+        width: 100%;
+    }
 `
 
 export const MediaTile = styled.p`

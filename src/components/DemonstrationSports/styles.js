@@ -64,4 +64,7 @@ export const DemonstrationSportsImgWrapper = styled.div`
         width: 100%;
         height: 100%;
     }
+    @media (max-width: 1200px){
+        right: 20%;
+    }
 `

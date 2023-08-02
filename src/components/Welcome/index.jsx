@@ -7,16 +7,16 @@ import { NavLink } from 'react-router-dom'
 export default function Welcome() {
   return (
     <WelcomeWrapper>
-        <MainWrapper>
-          <WelcomeContainer>
+      <MainWrapper>
+        <WelcomeContainer>
           <WelcomeInfo>
-            <h1>Xalqaro etnosport <br/> festivaliga xush kelibsiz</h1>
+            <h1>Xalqaro etnosport <br /> festivaliga xush kelibsiz</h1>
             <NavLink to="register">
-              <Button 
+              <Button
                 variant="contained"
                 color="primary"
                 sx={{
-                  padding: "26px 70px",
+                  padding: "20px 40px",
                   boxShadow: "none",
                   textTransform: "none",
                   fontFamily: "Nunito Sans",
@@ -31,11 +31,11 @@ export default function Welcome() {
               </Button>
             </NavLink>
           </WelcomeInfo>
-            <WelcomeImage>
-              <img src={require("../../imgs/photo_2023-07-26_00-34-17 1.png")} alt="Bilal Erdog’an va Adham Ikromov" />
-            </WelcomeImage>
-          </WelcomeContainer>
-        </MainWrapper>
+          <WelcomeImage>
+            <img src={require("../../imgs/photo_2023-07-26_00-34-17 1.png")} alt="Bilal Erdog’an va Adham Ikromov" />
+          </WelcomeImage>
+        </WelcomeContainer>
+      </MainWrapper>
     </WelcomeWrapper>
   )
 }
