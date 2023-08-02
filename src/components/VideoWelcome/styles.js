@@ -5,7 +5,7 @@ export const VideoWelcomeWrapper = styled.div`
     display: block;
     /* margin: 0 -56px; */
     position: relative;
-    padding-top: 120px;
+    margin-top: 120px;
     video {
         width: 100%;
         margin: 0 auto;
@@ -43,12 +43,18 @@ export const VideoWelcomeDateContainer = styled.div`
         font-style: normal;
         font-weight: 800;
         line-height: normal;
+        @media (max-width: 1160px){
+            font-size: 32px;
+        }
         span {
             color: #FFF;
             font-size: 72px;
             font-style: normal;
             font-weight: 300;
             line-height: normal;
+            @media (max-width: 1160px){
+                font-size: 32px;
+            }
         }
     }
 `
