@@ -54,6 +54,10 @@ a {
   height: 330px;
 }
 
+/* .walks-slick .slick-track {
+  height: max-content;
+} */
+
 .slick-arrow {
   display: none !important;
 }

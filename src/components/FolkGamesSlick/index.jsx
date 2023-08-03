@@ -21,7 +21,7 @@ export default function FolkGamesSlick() {
     const settings = {
         dots: true,
         infinite: true,
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
         speed: 2000,
@@ -32,8 +32,8 @@ export default function FolkGamesSlick() {
             {
               breakpoint: 1024,
               settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToShow: 3,
+                slidesToScroll: 3,
                 infinite: true,
                 dots: true
               }
@@ -58,7 +58,7 @@ export default function FolkGamesSlick() {
 
     return (
         <div className="walks-slick">
-        <Slider {...settings}>
+        {sayils.length !== 0 ? <Slider {...settings}>
             {
                 sayils.map((elem, index) => {
                     return (
@@ -69,73 +69,15 @@ export default function FolkGamesSlick() {
                             <WalksSlickTitle>{elem.name}</WalksSlickTitle>
                             <WalksSlickInfo>
                                 {elem.discription}
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus maiores nostrum quos numquam sit ut quasi tempore assumenda quod expedita unde beatae modi, eveniet nisi, quia deleniti odio earum asperiores?
                             </WalksSlickInfo>
                             <WalksLink to="/">Batafsil</WalksLink>
                         </WalksSlickItem>
                     )
                 })
             }
-            {/* <WalksSlickItem>
-                <WalksSlickImageWrapper>
-                    <img src={require("../../imgs/oshsayli.png")} alt="Uzbekistan_Airways" />
-                </WalksSlickImageWrapper>
-                <WalksSlickTitle>Osh musoboqasi</WalksSlickTitle>
-                <WalksSlickInfo>
-                    Lorem ipsum dolor sit amet consectetur. Mi adipiscing vitae arcu eget vel euismod vulputate. Amet leo enim adipiscing ac leo diam odio molestie faucibus. Enim.
-                </WalksSlickInfo>
-                <WalksLink to="/">Batafsil</WalksLink>
-            </WalksSlickItem>
-            <WalksSlickItem>
-                <WalksSlickImageWrapper>
-                    <img src={require("../../imgs/oshsayli.png")} alt="Uzbekistan_Airways" />
-                </WalksSlickImageWrapper>
-                <WalksSlickTitle>Osh musoboqasi</WalksSlickTitle>
-                <WalksSlickInfo>
-                    Lorem ipsum dolor sit amet consectetur. Mi adipiscing vitae arcu eget vel euismod vulputate. Amet leo enim adipiscing ac leo diam odio molestie faucibus. Enim.
-                </WalksSlickInfo>
-                <WalksLink to="/">Batafsil</WalksLink>
-            </WalksSlickItem>
-            <WalksSlickItem>
-                <WalksSlickImageWrapper>
-                    <img src={require("../../imgs/oshsayli.png")} alt="Uzbekistan_Airways" />
-                </WalksSlickImageWrapper>
-                <WalksSlickTitle>Osh musoboqasi</WalksSlickTitle>
-                <WalksSlickInfo>
-                    Lorem ipsum dolor sit amet consectetur. Mi adipiscing vitae arcu eget vel euismod vulputate. Amet leo enim adipiscing ac leo diam odio molestie faucibus. Enim.
-                </WalksSlickInfo>
-                <WalksLink to="/">Batafsil</WalksLink>
-            </WalksSlickItem>
-            <WalksSlickItem>
-                <WalksSlickImageWrapper>
-                    <img src={require("../../imgs/oshsayli.png")} alt="Uzbekistan_Airways" />
-                </WalksSlickImageWrapper>
-                <WalksSlickTitle>Osh musoboqasi</WalksSlickTitle>
-                <WalksSlickInfo>
-                    Lorem ipsum dolor sit amet consectetur. Mi adipiscing vitae arcu eget vel euismod vulputate. Amet leo enim adipiscing ac leo diam odio molestie faucibus. Enim.
-                </WalksSlickInfo>
-                <WalksLink to="/">Batafsil</WalksLink>
-            </WalksSlickItem>
-            <WalksSlickItem>
-                <WalksSlickImageWrapper>
-                    <img src={require("../../imgs/oshsayli.png")} alt="Uzbekistan_Airways" />
-                </WalksSlickImageWrapper>
-                <WalksSlickTitle>Osh musoboqasi</WalksSlickTitle>
-                <WalksSlickInfo>
-                    Lorem ipsum dolor sit amet consectetur. Mi adipiscing vitae arcu eget vel euismod vulputate. Amet leo enim adipiscing ac leo diam odio molestie faucibus. Enim.
-                </WalksSlickInfo>
-                <WalksLink to="/">Batafsil</WalksLink>
-            </WalksSlickItem>
-            <WalksSlickItem>
-                <WalksSlickImageWrapper>
-                    <img src={require("../../imgs/oshsayli.png")} alt="Uzbekistan_Airways" />
-                </WalksSlickImageWrapper>
-                <WalksSlickTitle>Osh musoboqasi</WalksSlickTitle>
-                <WalksSlickInfo>
-                    Lorem ipsum dolor sit amet consectetur. Mi adipiscing vitae arcu eget vel euismod vulputate. Amet leo enim adipiscing ac leo diam odio molestie faucibus. Enim.
-                </WalksSlickInfo>
-                <WalksLink to="/">Batafsil</WalksLink>
-            </WalksSlickItem> */}
-        </Slider>
+        </Slider>:<></>
+}
         </div>
     );
 }
