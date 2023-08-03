@@ -9,7 +9,7 @@ export const HeaderWrapper = styled.header`
     top: 0;
     transition: all .3s;
     z-index: 1000;
-    @media (max-width: 670px){
+    @media (max-width: 1075px){
         border-bottom: 2px solid #ccc;
     }
     /* box-shadow: ${props => props.type === "effective" ? '10px 0px 30px 10px #e8e8e8':``}; */
@@ -34,22 +34,26 @@ export const Logos = styled.div`
     img {
         height: 90px;
         @media (max-width: 670px){
-            width: 70px;
+            height: 70px;
         }
     }
 `
 
 export const MenuList = styled.ul`
-    @media (max-width: 670px){
+    transition: all .3s;
+    @media (max-width: 1075px){
         position: absolute;
         top: 100%;
-        height: 60px;
+        height: ${props => props.open?'60px':'0'};
+        overflow: hidden;
         background: #FFF;
         width: 100%;
         left: 0;
         display: flex;
         align-items: center;
         justify-content: center;
+        box-shadow: 0px 20px 30px -2px #919191;
+        border-top: 1px solid #eee;
     }
 `
 
@@ -72,6 +76,13 @@ export const MenuItemLink = styled(NavLink)`
     font-weight: 600;
     transition: all .3s;
     color: #1F1F1F;
+`
+
+export const LanguageDots = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 `
 
 export const TreeDots = styled.span`

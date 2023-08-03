@@ -1,0 +1,12 @@
+{
+    "home_page": {
+      "uz": "Asosiy",
+      "ru": "Основной",
+      "eng": "Main"
+    },
+    "news_page": {
+      "uz": "Yangiliklar",
+      "ru": "Новости",
+      "eng": "News"
+    }
+}
