@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 export const NewsInfoImg = styled.img`
-    object-fit: cover;
+    object-fit: contain;
     clip-path: ellipse(100px at 40% 50%);
     width: 700px;
     height: 500px;
@@ -10,5 +10,5 @@ export const NewsInfoImg = styled.img`
 `
 
 export const NewsInfoText = styled.p`
-    font-size: 20px;
+    font-size: 20px;    
 `

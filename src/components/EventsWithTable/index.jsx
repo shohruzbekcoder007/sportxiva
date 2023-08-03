@@ -9,13 +9,13 @@ export default function EventsWithTable() {
     <EventsWithTableWrapper>
         <MainWrapper>
             <EventsWithTableTitle><Title>Festival dasturi</Title></EventsWithTableTitle>
-            <EventsWithTableTabs/>
+            <EventsWithTableTabs />
             <EventsWithTableTitle><Title>Madaniy tadbirlar</Title></EventsWithTableTitle>
-            <CulturalEvents/>
+            <CulturalEvents title={'/event-first/'}/>
             <EventsWithTableTitle><Title>Sport tadbirlari</Title></EventsWithTableTitle>
-            <CulturalEvents/>
+            <CulturalEvents title={'/event-secon/d'}/>
             <EventsWithTableTitle><Title>Milliy xalq o’yinlar</Title></EventsWithTableTitle>
-            <CulturalEvents/>
+            <CulturalEvents title={'/event-third/'}/>
         </MainWrapper>
     </EventsWithTableWrapper>
   )

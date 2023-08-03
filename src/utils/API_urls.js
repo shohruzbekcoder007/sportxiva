@@ -1,4 +1,4 @@
-export const host = "http://192.168.0.114:8085/"
+export const host = "http://192.168.0.114:8085"
 
 export const count_data = '/count_data/'
 export const country_name = '/country_name/'
@@ -12,3 +12,5 @@ export const sayil = '/sayil/'
 export const milliy = '/milliy/'
 export const ideaguests = '/ideaguests/'
 export const calendar = '/calendar/'
+export const news = '/news/'
+export const event = '/event-first/'

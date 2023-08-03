@@ -1,18 +1,33 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { MainWrapper } from '../../global_styles/styles'
 import { RegisterTitle } from '../Register/styles'
 import img1 from '../../imgs/osh.png'
-import { NewsInfoCard, NewsInfoImg, NewsInfoImgCard, NewsInfoText } from './styles'
-
+import {NewsInfoImg, NewsInfoText } from './styles'
+import { getNews } from './request'
+import { news } from '../../utils/API_urls'
+import { useLocation, useParams } from 'react-router'
 export default function NewsInfo() {
+  const { state } = useLocation()
+  const [NewsInfo, setNewsInfo] = useState(state)
+  console.log(state);
+  // const {id} = useParams()
+  // useEffect(() => {
+  //   getNews(news,id, (response) => {
+  //     setNewsInfo(response.data)
+  //   }, (error) => {
+  //     console.log(error)
+  //   })
+  // }, [])
   return (
     <div>
       <MainWrapper>
       <RegisterTitle>
-          <h1>Osh musoboqasi</h1>
+          <h1>{NewsInfo?.name}</h1>
         </RegisterTitle>
-            <NewsInfoImg  src={img1} alt="" />
-          <NewsInfoText>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea velit accusamus, maiores minima soluta voluptates atque architecto quasi minus quos maxime voluptate aliquid nostrum facilis illum, modi et accusantium possimus, voluptatem animi temporibus libero omnis consequuntur magni. Voluptate fugiat tempora, consectetur inventore, ratione veniam vitae est libero quisquam ipsum facere, ut dicta aliquid quae minima nostrum atque architecto aperiam quod accusamus temporibus rem eligendi. Reprehenderit, incidunt aspernatur quia sunt similique laborum fugiat repellat sapiente aliquam in tempore. Corrupti facere minima tempore consequuntur eaque neque, similique ex fugiat ipsam assumenda quia earum perspiciatis sed velit odit ut, nulla ullam quis repellendus, mollitia laudantium iusto nemo enim optio. Voluptatibus quidem adipisci ex aliquam quis cumque odio sapiente exercitationem error harum iusto quia alias quam consectetur unde sed assumenda possimus, voluptate, tempora rem dolor nihil dolorem? Pariatur et corrupti odio amet illo provident doloribus beatae rem doloremque atque. Ex tenetur voluptas ratione praesentium, odio iure mollitia labore error quasi, doloribus explicabo ipsum consectetur dolore animi beatae facere alias saepe commodi esse illo necessitatibus. Rem dolorum dolores similique quis, eligendi illum quae ullam eum ab ipsa praesentium eaque est voluptate ea! Excepturi ipsa temporibus iure voluptatem rerum nobis accusantium similique iste? Reprehenderit nostrum quos deleniti, cupiditate ipsa quaerat omnis, consequuntur dolorem explicabo voluptas laboriosam minima suscipit, sint hic tempore aut molestiae nesciunt dignissimos consectetur illum voluptates eius ab non? Non reprehenderit laboriosam nemo repellat aut fuga, quos incidunt minima tempora totam porro quam eligendi exercitationem temporibus similique? Dolor magnam quaerat necessitatibus ipsa ab odit ipsum. Unde laboriosam iure explicabo omnis adipisci amet, ratione quisquam consequatur excepturi consequuntur. Ex perspiciatis quia natus inventore consequuntur. Nulla eum ab unde aperiam, recusandae assumenda ut quam eveniet blanditiis velit quis cupiditate itaque totam excepturi numquam. Itaque, animi quae sed officiis cumque maiores cupiditate minima et, nihil dicta nisi, ad accusamus neque consectetur beatae alias? Odit possimus corporis similique reprehenderit, alias omnis amet ducimus recusandae ullam atque autem rerum facilis at, quam debitis quae corrupti cumque eligendi porro libero unde assumenda. Aliquid omnis laudantium, velit repellendus aspernatur animi blanditiis sapiente, consequatur natus laboriosam accusamus, id facere! Dignissimos id hic aut incidunt provident! Accusantium nostrum, unde animi amet dolore minima adipisci tenetur sequi, rem nam esse! Quia quod distinctio deleniti perspiciatis quidem enim, voluptatibus aliquam ducimus omnis accusantium consequuntur. Quis voluptatibus aut saepe alias. Suscipit vitae possimus beatae aperiam ex excepturi recusandae vel dicta iusto maxime dolore voluptas doloremque culpa porro voluptatem eius esse nihil rem, perspiciatis, officiis quibusdam, saepe eum perferendis? Ipsum omnis totam provident error inventore. Praesentium reiciendis voluptatibus eaque ipsam voluptas, adipisci ipsum voluptatum similique temporibus neque. Dicta illo provident iste similique maxime ipsa perspiciatis culpa, placeat asperiores error ducimus quae qui vero aut, reiciendis modi veniam! Consequuntur non delectus eius, nobis harum eligendi aliquid repellat numquam placeat nam doloribus eum sapiente inventore in accusamus quas ad! Quae, tenetur esse reprehenderit eos quia quod iusto. Distinctio provident neque repudiandae pariatur eligendi suscipit totam doloremque officia ipsa rerum magni corporis enim voluptas exercitationem quasi sequi asperiores optio a illum obcaecati, odio blanditiis. Dolorem culpa eveniet ad adipisci. Officia voluptatibus at repellat officiis quidem fugit temporibus unde vero impedit nobis mollitia velit dolores nemo error rem accusamus eius totam asperiores est, suscipit delectus a obcaecati voluptatem. Suscipit sed, voluptatum totam vitae voluptates fuga provident dicta facere vel illo ad pariatur sequi exercitationem quis quasi placeat cumque perferendis officia. Minus in facere deserunt atque culpa fuga blanditiis at aliquid tenetur dicta? Voluptates assumenda odio nemo quis tempora ratione nisi repellat reiciendis nam dignissimos quidem quos fuga consectetur facilis, obcaecati deserunt eligendi, reprehenderit vero maxime distinctio quisquam provident fugiat! Maxime quod sed, voluptates quia perspiciatis quos ipsam eum repudiandae explicabo. Consequatur expedita sint quos odit omnis a sapiente, iure quia dolorum harum doloribus voluptatum repudiandae quam deserunt similique architecto veniam tenetur est fuga et provident facere velit veritatis optio. Blanditiis pariatur sint sunt obcaecati tempora excepturi eos dolore doloribus vero. Vero, explicabo? Omnis sapiente beatae maxime magnam placeat ad dolorem! Molestias, ratione temporibus sit vero laboriosam ducimus ab odit ipsum recusandae. Necessitatibus doloribus iste sint dolores numquam non reiciendis quas quaerat. Inventore sapiente provident dicta eos reprehenderit nobis perferendis ipsum minus tenetur libero magnam, est aperiam amet facere quisquam molestiae ipsam molestias necessitatibus deleniti dolore nulla sed alias. Fugit itaque ut, repellendus aliquam, id quo cum alias voluptatum consectetur assumenda illum molestias, laudantium vel laboriosam vitae animi inventore totam voluptate eaque qui debitis corporis magni impedit fugiat. Placeat, recusandae quasi porro quisquam consequuntur distinctio quo, exercitationem velit earum culpa doloremque minima odit vel expedita similique facere. Reiciendis enim quaerat ex nobis alias exercitationem eligendi nam veritatis quas architecto. Ullam, tenetur delectus incidunt quo facilis eius quibusdam aspernatu</NewsInfoText>
+         <div style={{height: '100vh'}}>
+         <NewsInfoImg src={NewsInfo?.image} alt="" />
+         <NewsInfoText>{NewsInfo?.description}</NewsInfoText>  
+         </div>
       </MainWrapper>
     </div>
   )
