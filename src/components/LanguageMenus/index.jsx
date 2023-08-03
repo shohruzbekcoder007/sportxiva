@@ -4,6 +4,8 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import { useDispatch } from 'react-redux'
+import { setLanguage } from '../../redux/action/languageActions'
 
 const StyledMenu = styled((props) => (
   <Menu
@@ -47,6 +49,7 @@ export default function LanguageMenus() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const [changeLang, setChangeLang] = React.useState('uz')
+  const dispatch = useDispatch()
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -88,13 +91,13 @@ export default function LanguageMenus() {
         open={open}
         onClose={handleClose}
       >
-        <MenuItem onClick={() => {changeLanguage("uz")}} disableRipple>
+        <MenuItem onClick={() => {dispatch(setLanguage("uz")); changeLanguage("uz")}} disableRipple>
             O'zbekcha
         </MenuItem>
-        <MenuItem onClick={() => {changeLanguage("ru")}} disableRipple>
+        <MenuItem onClick={() => {dispatch(setLanguage("ru")); changeLanguage("ru")}} disableRipple>
             Русский
         </MenuItem>
-        <MenuItem onClick={() => {changeLanguage("eng")}} disableRipple>
+        <MenuItem onClick={() => {dispatch(setLanguage("eng")); changeLanguage("eng")}} disableRipple>
             English
         </MenuItem>
       </StyledMenu>

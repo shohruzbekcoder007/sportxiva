@@ -11,6 +11,9 @@ export const ChampionshipMainBlog = styled.div`
     position: relative;
     transition: all .3s;
     height: 900px;
+    @media (max-width: 700px){
+        height: 670px;
+    }
     img {
         width: 100%;
         height: 100%;
@@ -30,6 +33,7 @@ export const ChampionshipMainBlogContainer = styled.div`
     top: 0;
     left: 0;
     z-index: 10;
+    flex-wrap: wrap;
 `
 
 export const ChampionshipMainBlogBox = styled.div`
@@ -40,6 +44,11 @@ export const ChampionshipMainBlogBox = styled.div`
     /* margin-bottom: 12px; */
     :last-child {
         border-right: none;
+    }
+    @media (max-width: 930px){
+        width: 50%;
+        height: 50%;
+        border: 1px solid #ccc;
     }
 `
 
@@ -66,6 +75,10 @@ export const ChampionshipBlogInfo = styled.div`
         font-style: normal;
         font-weight: 300;
         line-height: 250px;
+        @media (max-width: 930px){
+            font-size: 80px;
+            transform: translate(0px, -110px);
+        }
     }
     .championship-footer{
             transition: all .5s;
@@ -89,6 +102,11 @@ export const ChampionshipBlogInfoFooter = styled.div`
     width: 100%;
     /* text-align: center; */
     bottom: 0px;
+    /* @media (max-width: 700px) {
+        h5 {
+            margin-bottom: 5px;
+        }
+    } */
     h5 {
         color: #FFF;
         font-size: 28px;
@@ -96,6 +114,9 @@ export const ChampionshipBlogInfoFooter = styled.div`
         font-weight: 400;
         line-height: normal;
         margin-bottom: 56px;
+        @media (max-width: 700px){
+            margin-bottom: 5px;
+        }
     }
 `
 
