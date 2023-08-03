@@ -6,9 +6,13 @@ import img1 from '../../imgs/osh.png'
 import { NewsImgCard, NewsRight, NewsWalksLink, NewsWalksSlickImageWrapper, NewsWalksSlickInfo, NewsWalksSlickItem, NewsWalksSlickTitle, NewsWelcomeContainer } from './styles'
 import { getNews } from './request'
 import { news } from '../../utils/API_urls'
+import { useSelector } from 'react-redux'
+import language from '../../utils/language.json'
 
 export default function News() {
   const [News, setNews] = useState([])
+
+  const lang = useSelector(state => state.language)
 
   useEffect(() => {
     getNews(news, (response) => {
@@ -46,7 +50,7 @@ export default function News() {
                   <NewsWalksSlickInfo>
                     {item?.description}
                   </NewsWalksSlickInfo>
-                  <NewsWalksLink to={`/info`} state={item} >Batafsil</NewsWalksLink>
+                  <NewsWalksLink to={`/info`} state={item}>{language.more[lang]}</NewsWalksLink>
                 </NewsWalksSlickItem>
               )
             })

@@ -4,8 +4,11 @@ import { MainWrapper } from '../../global_styles/styles'
 import { Button } from '@mui/material'
 import { countCommet, getMap } from './requests'
 import { footer_map, ideaguests } from '../../utils/API_urls'
+import { useSelector } from 'react-redux'
+import language from '../../utils/language.json'
 
 export default function Footer() {
+    const lang = useSelector(state => state.language)
 
     const [first_name, setFirst_name] = useState('')
     const [last_name, setLast_name] = useState('')
@@ -37,7 +40,7 @@ export default function Footer() {
         <MainWrapper>
             <FooterContainer>
                 <FooterLeft>
-                    <h5>Fikr va mulohazalar</h5>
+                    <h5>{language.feedback[lang]}</h5>
                     <FooterCommentForm>
                         <input type="text" placeholder='Ismingiz' onChange={(event)=> {setFirst_name(event.target.value)}}/>
                         <input type="text" placeholder='Emailingiz' onChange={(event)=> {setLast_name(event.target.value)}}/>
@@ -61,15 +64,15 @@ export default function Footer() {
                         onClick={clickHandler}
                         variant="outlined"
                     >
-                        Jo’natish
+                        {language.Send[lang]}
                     </Button>
                 </FooterLeft>
                 <FooterReight>
                     <FooterReightNav>
-                        <FooterReightLink>Asosiy</FooterReightLink>
-                        <FooterReightLink>Yangiliklar</FooterReightLink>
-                        <FooterReightLink>Tadbirlar</FooterReightLink>
-                        <FooterReightLink>Tashkilotchilar</FooterReightLink>
+                        <FooterReightLink>{language.home_page[lang]}</FooterReightLink>
+                        <FooterReightLink>{language.news_page[lang]}</FooterReightLink>
+                        <FooterReightLink>{language.Events[lang]}</FooterReightLink>
+                        <FooterReightLink>{language.Organizers[lang]}</FooterReightLink>
                     </FooterReightNav>
                     <FooterImageWrapper>
                         <img src={map.photo} alt="footer image" />
@@ -77,7 +80,7 @@ export default function Footer() {
                 </FooterReight>
             </FooterContainer>
             <FooterBottom>
-                <p>O’zbekiston Republikasi Yoshlar siyosati va sport vazirligi 2023</p>
+                <p>{language.MinistryUzbekistan[lang]}</p>
             </FooterBottom>
         </MainWrapper>
     </FooterWrapper>

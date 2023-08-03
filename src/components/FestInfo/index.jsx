@@ -3,8 +3,11 @@ import { MainWrapper } from '../../global_styles/styles'
 import { FestInfoBox, FestInfoContainer, FestInfoCount, FestInfoImageAndText, FestInfoLink, FestInfoLinkBox, FestInfoText } from './styles'
 import { countData } from './requests'
 import { count_data } from '../../utils/API_urls'
+import { useSelector } from 'react-redux'
+import language from '../../utils/language.json'
 
 export default function FestInfo() {
+    const lang = useSelector(state => state.language)
 
     const [country, setCountry] = useState(0)
     const [member, setMember] = useState(0)
@@ -27,11 +30,11 @@ export default function FestInfo() {
                 <FestInfoImageAndText>
                     <img src={require('../../imgs/public_box1.png')} alt="box img 1" />
                     <FestInfoCount>{country}</FestInfoCount>
-                    <FestInfoText>Festivalda ishtirok etuvchi davlatlar</FestInfoText>
+                    <FestInfoText>{language.Participating[lang]}</FestInfoText>
                 </FestInfoImageAndText>
                 <FestInfoLinkBox>
                     <FestInfoLink to="countrymembers">
-                        Ko’rish
+                    {language.View[lang]}
                     </FestInfoLink>
                 </FestInfoLinkBox>
             </FestInfoBox>
@@ -39,11 +42,11 @@ export default function FestInfo() {
                 <FestInfoImageAndText>
                     <img src={require('../../imgs/public_box2.png')} alt="box img 2" />
                     <FestInfoCount>{guest}</FestInfoCount>
-                    <FestInfoText>Xorijiy mehmonlar</FestInfoText>
+                    <FestInfoText>{language.ForeignGuests[lang]}</FestInfoText>
                 </FestInfoImageAndText>
                 <FestInfoLinkBox>
                     <FestInfoLink to="guests">
-                        Ko’rish
+                        {language.View[lang]}
                     </FestInfoLink>
                 </FestInfoLinkBox>
             </FestInfoBox>
@@ -51,11 +54,11 @@ export default function FestInfo() {
                 <FestInfoImageAndText>
                     <img src={require('../../imgs/publix_box3.png')} alt="box img 3" />
                     <FestInfoCount>{member}</FestInfoCount>
-                    <FestInfoText>Musoboqa ishtirokchilari</FestInfoText>
+                    <FestInfoText>{language.ParticipantsCompetition[lang]}</FestInfoText>
                 </FestInfoImageAndText>
                 <FestInfoLinkBox>
                     <FestInfoLink to="members">
-                        Ko’rish
+                        {language.View[lang]}
                     </FestInfoLink>
                 </FestInfoLinkBox>
             </FestInfoBox>

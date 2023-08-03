@@ -4,9 +4,12 @@ import { OrgUsersUrl } from "./requests";
 import { OrganizersContainer, OrganizersPhoto, OrganizersTitle, OrganizersUserinfo, OrganizersUserName } from "./style";
 import * as React from 'react';
 import { organizers } from "../../utils/API_urls";
-
+import { useSelector } from 'react-redux'
+import language from '../../utils/language.json'
 
 export default function OrganizersUser() {
+  const lang = useSelector(state => state.language)
+
     const [rows, setRows] = React.useState([])
     React.useEffect(() => {
         OrgUsersUrl(organizers, (response) => {
@@ -18,7 +21,7 @@ export default function OrganizersUser() {
     return (
     <MainWrapper>
         <OrganizersTitle>
-          <Title>Tashkilotchilar</Title>
+          <Title>{language.Organizers[lang]}</Title>
         </OrganizersTitle>
         <WelcomeContainer>
             <OrganizersContainer>

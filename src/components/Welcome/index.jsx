@@ -3,14 +3,18 @@ import { WelcomeContainer, WelcomeImage, WelcomeInfo, WelcomeWrapper } from './s
 import { MainWrapper } from '../../global_styles/styles'
 import { Button } from '@mui/material'
 import { NavLink } from 'react-router-dom'
+import { useSelector } from 'react-redux'
+import language from '../../utils/language.json'
 
 export default function Welcome() {
+  const lang = useSelector(state => state.language)
+
   return (
     <WelcomeWrapper>
       <MainWrapper>
         <WelcomeContainer>
           <WelcomeInfo>
-            <h1>Xalqaro etnosport <br /> festivaliga xush kelibsiz</h1>
+            <h1 style={{width: "880px"}}>{language.WelcomeFestival[lang]}</h1>
             <NavLink to="register">
               <Button
                 variant="contained"
@@ -27,7 +31,7 @@ export default function Welcome() {
                   borderRadius: "12px"
                 }}
               >
-                Ro’yxatdan o’tish
+                {language.Registr[lang]}
               </Button>
             </NavLink>
           </WelcomeInfo>

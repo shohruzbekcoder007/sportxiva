@@ -8,5 +8,190 @@
       "uz": "Yangiliklar",
       "ru": "Новости",
       "eng": "News"
+    },
+    "dedline": {
+      "uz": "Festival boshlanishiga qoldi",
+      "ru": "До начала фестиваля осталось",
+      "eng": "dedline"
+    },
+    "Events": {
+      "uz": "Tadbirlar",
+      "ru": "События",
+      "eng": "Events"
+    },
+    "Organizers": {
+      "uz": "Tashkilotchilar",
+      "ru": "Организаторы",
+      "eng": "Organizers"
+    },
+    "WelcomeFestival": {
+      "uz": "Xalqaro etnosport festivaliga xush kelibsiz",
+      "ru": "Добро пожаловать на международный фестиваль этноспорта",
+      "eng": "Welcome to the International Ethnosport Festival"
+    },
+    "Registr": {
+      "uz": "Ro'yxatdan o'tish",
+      "ru": "Регистрация",
+      "eng": "Register"
+    },
+    "Participating": {
+      "uz": "Festivalda ishtirok etuvchi davlatlar",
+      "ru": "Государства-участники фестиваля",
+      "eng": "Participating States of the festival"
+    },
+    "ForeignGuests": {
+      "uz": "Xorijiy mehmonlar",
+      "ru": "Иностранные гости",
+      "eng": "Foreign guests"
+    },
+    "ParticipantsCompetition": {
+      "uz": "Musoboqa ishtirokchilari",
+      "ru": "Участники соревнований",
+      "eng": "Participants of the competition"
+    },
+    "View": {
+      "uz": "Ko'rish",
+      "ru": "Смотреть",
+      "eng": "View"
+    },
+    "Championships": {
+      "uz": "Jaxon chempionatlari",
+      "ru": "Чемпионаты мира",
+      "eng": "World Championships"
+    },
+    "Demonstration": {
+      "uz": "Ko’rgazmali sportlar",
+      "ru": "Показательные виды спорта",
+      "eng": "Demonstration sports"
+    },
+    "BirdHunting": {
+      "uz": "Qush ovi",
+      "ru": "Охота на птиц",
+      "eng": "Bird hunting"
+    },
+    "Kopkari": {
+      "uz": "Kopkari",
+      "ru": "Копкари",
+      "eng": "Kopkari"
+    },
+    "Archery": {
+      "uz": "Kamondan otish",
+      "ru": "Стрельба из лука",
+      "eng": "Archery"
+    },
+    "MartialArts": {
+      "uz": "Turon yakka kurashi",
+      "ru": "единоборство турон",
+      "eng": "Martial Arts 'Turon'"
+    },
+    "OurHistory": {
+      "uz": "Bizning tariximiz",
+      "ru": "Наша история",
+      "eng": "Our History"
+    },
+    "Sponsors": {
+      "uz": "Homiylar",
+      "ru": "Спонсоры",
+      "eng": "Sponsors"
+    },
+    "Sayil": {
+      "uz": "Sayillar",
+      "ru": "Sayil",
+      "eng": "Sayil"
+    },
+    "NationalFolk": {
+      "uz": "Milliy xalq o’yinlari",
+      "ru": "Национальные народные игры",
+      "eng": "National Folk Games"
+    },
+    "feedback": {
+      "uz": "Fikr va mulohazalar",
+      "ru": "Отзывы",
+      "eng": "feedback"
+    },
+    "Send": {
+      "uz": "Jo'natish",
+      "ru": "Отправить",
+      "eng": "Send"
+    },
+    "MinistryUzbekistan": {
+      "uz": "O’zbekiston Republikasi Yoshlar siyosati va sport vazirligi ",
+      "ru": "Министерство молодежной политики и спорта Республики Узбекистан",
+      "eng": "Ministry of Youth Policy and Sports of the Republic of Uzbekistan"
+    },
+    "FestivalProgram": {
+      "uz": "Festival dasturi",
+      "ru": "Программа фестиваля",
+      "eng": "Festival program"
+    },
+    "CulturalEvents": {
+      "uz": "Madaniy tadbirlar",
+      "ru": "Культурные мероприятия",
+      "eng": "Cultural events"
+    },
+    "SportsEvents": {
+      "uz": "Sport tadbirlari",
+      "ru": "Спортивные мероприятия",
+      "eng": "Sports events"
+    },
+    "country": {
+      "uz": "Davlati",
+      "ru": "страна",
+      "eng": "country"
+    },
+    "Datebirth": {
+      "uz": "Tug’ilgan sana",
+      "ru": "Дата рождения",
+      "eng": "Date of birth"
+    },
+    "Name": {
+      "uz": "Ism",
+      "ru": "Имя",
+      "eng": "Name"
+    },
+    "Surname": {
+      "uz": "Familiya",
+      "ru": "Фамилия",
+      "eng": "Surname"
+    },
+    "sporttype": {
+      "uz": "Sport turi",
+      "ru": "вид спорта",
+      "eng": "sport type"
+    },
+    "gender": {
+      "uz": "Jinsi",
+      "ru": "Пол",
+      "eng": "gender"
+    },
+    "RegistrationGuest": {
+      "uz": "Mehmon sifatida ro’yxatdan o’tish",
+      "ru": "Регистрация в качестве гостя",
+      "eng": "Registration as a guest"
+    },
+    "download": {
+      "uz": "Nizomni yuklab olish",
+      "ru": "скачать",
+      "eng": "download"
+    },
+    "PhotoGallery": {
+      "uz": "Fotogalereya",
+      "ru": "Фотогалерея",
+      "eng": "Photo Gallery"
+    },
+    "choose": {
+      "uz": "tanlang",
+      "ru": "выбрать",
+      "eng": "choose"
+    },
+    "date": {
+      "uz": "sana",
+      "ru": "дата",
+      "eng": "date"
+    },
+    "more": {
+      "uz": "Batafsil",
+      "ru": "Более",
+      "eng": "More"
     }
 }

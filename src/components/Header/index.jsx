@@ -43,8 +43,8 @@ export default function Header() {
                     <MenuList open={openMenu}>
                         <MenuItem><MenuItemLink to="/">{language.home_page[lang]}</MenuItemLink></MenuItem>
                         <MenuItem><MenuItemLink to="news">{language.news_page[lang]}</MenuItemLink></MenuItem>
-                        <MenuItem><MenuItemLink to="events">Tadbirlar</MenuItemLink></MenuItem>
-                        <MenuItem><MenuItemLink to="organizers">Tashkilotchilar</MenuItemLink></MenuItem>
+                        <MenuItem><MenuItemLink to="events">{language.Events[lang]}</MenuItemLink></MenuItem>
+                        <MenuItem><MenuItemLink to="organizers">{language.Organizers[lang]}</MenuItemLink></MenuItem>
                     </MenuList>
                     <LanguageDots>
                         <LanguageMenus />
