@@ -19,46 +19,47 @@ export default function FolkGamesSlick() {
     }, [])
 
     const settings = {
-        dots: true,
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        speed: 2000,
-        autoplaySpeed: 2000,
-        cssEase: "linear",
-        arrows: false,
-        responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                infinite: true,
-                dots: true
-              }
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                initialSlide: 2
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
+      dots: true,
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      speed: 2000,
+      autoplaySpeed: 2000,
+      cssEase: "linear",
+      arrows: false,
+      responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
             }
-          ]
-    };
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              initialSlide: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+  };
 
     return (
         <div className="walks-slick">
-        <Slider {...settings}>
+        {
+          sayils.length !== 0?<Slider {...settings}>
             {
                 sayils.map((elem, index) => {
                     return (
@@ -69,13 +70,15 @@ export default function FolkGamesSlick() {
                             <WalksSlickTitle>{elem.name}</WalksSlickTitle>
                             <WalksSlickInfo>
                                 {elem.discription}
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, tempore. Odit voluptate corporis cum, aliquid tempore consequatur explicabo ipsam recusandae laboriosam assumenda facere accusamus nisi perferendis laborum expedita officia quisquam?
                             </WalksSlickInfo>
                             <WalksLink to="/">Batafsil</WalksLink>
                         </WalksSlickItem>
                     )
                 })
             }
-        </Slider>
+        </Slider>:<></>
+        }
         </div>
     );
 }
