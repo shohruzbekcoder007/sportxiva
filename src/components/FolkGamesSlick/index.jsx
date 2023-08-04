@@ -10,6 +10,8 @@ import language from '../../utils/language.json'
 
 export default function FolkGamesSlick() {
 
+  const lang = useSelector(state => state.language)
+
     const [sayils, setSayils] = useState([])
 
     useEffect(() => {
