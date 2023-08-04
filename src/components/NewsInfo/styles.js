@@ -12,8 +12,8 @@ export const NewsInfoImg = styled.img`
     float: right;
     margin: 1rem;
     @media (max-width: 750px) {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
     }
     @media (max-width: 500px) {
         width: 200px;
