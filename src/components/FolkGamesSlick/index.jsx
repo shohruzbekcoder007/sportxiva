@@ -8,6 +8,8 @@ import { milliy } from "../../utils/API_urls";
 
 export default function FolkGamesSlick() {
 
+  const lang = useSelector(state => state.language)
+
     const [sayils, setSayils] = useState([])
 
     useEffect(() => {
