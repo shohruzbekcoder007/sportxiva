@@ -97,7 +97,7 @@ export default function LanguageMenus() {
         <MenuItem onClick={() => {dispatch(setLanguage("ru")); changeLanguage("ru")}} disableRipple>
             Русский
         </MenuItem>
-        <MenuItem onClick={() => {dispatch(setLanguage("eng")); changeLanguage("eng")}} disableRipple>
+        <MenuItem onClick={() => {dispatch(setLanguage("en")); changeLanguage("en")}} disableRipple>
             English
         </MenuItem>
       </StyledMenu>
