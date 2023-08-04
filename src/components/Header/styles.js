@@ -56,6 +56,12 @@ export const MenuList = styled.ul`
         box-shadow: 0px 20px 30px -2px #919191;
         border-top: 1px solid #eee;
     }
+    @media (max-width: 460px) {
+        flex-wrap: wrap;
+        height: ${props => props.open?'auto':'0'};
+        text-align: center;
+    }
+    
 `
 
 export const MenuItem = styled.li`
@@ -67,6 +73,11 @@ export const MenuItem = styled.li`
     }
     @media (max-width: 1450px) {
         margin: 0 10px;
+    }
+    @media (max-width: 460px) {
+        width: 100%;
+        padding: 10px 0;
+        transition: all .5s;
     }
 `
 

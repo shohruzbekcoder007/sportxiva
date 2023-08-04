@@ -37,6 +37,10 @@ export const VideoWelcomeDateContainer = styled.div`
         font-weight: 600;
         line-height: normal;
         margin-bottom: 24px;
+        @media (max-width: 420px){
+            font-size: 20px;
+            margin-bottom: 0px;
+        }
     }
     p{
         color: #FFF;
@@ -48,6 +52,9 @@ export const VideoWelcomeDateContainer = styled.div`
         line-height: normal;
         @media (max-width: 1160px){
             font-size: 32px;
+        }
+        @media (max-width: 420px){
+            font-size: 20px;
         }
         span {
             color: #FFF;

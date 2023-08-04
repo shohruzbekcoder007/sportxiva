@@ -14,7 +14,7 @@ export default function Welcome() {
       <MainWrapper>
         <WelcomeContainer>
           <WelcomeInfo>
-            <h1>{language.WelcomeFestival[lang]}</h1>
+            <h1 style={{maxWidth: '800px'}}>{language.WelcomeFestival[lang]}</h1>
             <NavLink to="register">
               <Button
                 variant="contained"

@@ -60,6 +60,9 @@ export const DemonstrationSportsImgWrapper = styled.div`
     transform: translateY(60%) rotate(-45deg);
     opacity: -1;
     z-index: -1;
+    @media (max-width: 1110px){
+        display: none;
+    }
     img {
         width: 100%;
         height: 100%;
