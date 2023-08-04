@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { HeaderContainer, HeaderWrapper, LanguageDots, Logos, MenuItem, MenuItemLink, MenuList, TreeDots } from './styles'
+import { AddLogos, HeaderContainer, HeaderWrapper, LanguageDots, Logos, MenuItem, MenuItemLink, MenuList, TreeDots } from './styles'
 import { MainWrapper } from '../../global_styles/styles'
 import LanguageMenus from '../LanguageMenus';
 import { useSelector } from 'react-redux'
@@ -35,11 +35,7 @@ export default function Header() {
         <HeaderWrapper type={headerType}>
             <MainWrapper>
                 <HeaderContainer>
-                    <Logos>
-                        <img src={require('../../imgs/new_logo.jpg')} alt="logo" />
-                        <img src={require('../../imgs/new_logo2.jpg')} alt="logo" />
-                        <img src={require('../../imgs/removebg-preview2.png')} alt="logo" />
-                    </Logos>
+                        <img src={require('../../imgs/image1.png')} alt="logo" />
                     <MenuList open={openMenu}>
                         <MenuItem><MenuItemLink to="/">{language.home_page[lang]}</MenuItemLink></MenuItem>
                         <MenuItem><MenuItemLink to="news">{language.news_page[lang]}</MenuItemLink></MenuItem>
@@ -57,6 +53,13 @@ export default function Header() {
                         </TreeDots>
                     </LanguageDots>
                 </HeaderContainer>
+                <AddLogos>
+                    <Logos>
+                        <img src={require('../../imgs/new_logo.jpg')} alt="logo" />
+                        <img src={require('../../imgs/new_logo2.jpg')} alt="logo" />
+                        <img src={require('../../imgs/removebg-preview2.png')} alt="logo" />
+                    </Logos>
+                </AddLogos>
             </MainWrapper>
         </HeaderWrapper>
     )

@@ -21,6 +21,9 @@ export const Title = styled.h3`
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+    @media (max-width: 520px){
+        font-size: 36px;
+    }
 `
 
 export const FlagImg = styled.div `

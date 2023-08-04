@@ -21,9 +21,10 @@ export const HeaderContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @media (max-width: 670px){
+    /* @media (max-width: 670px){
         height: 80px;
-    }
+    } */
+    border-bottom: 2px dotted #ccc;
 `
 
 export const Logos = styled.div`
@@ -33,8 +34,8 @@ export const Logos = styled.div`
     justify-content: center;
     img {
         height: 90px;
-        @media (max-width: 670px){
-            height: 70px;
+        @media (max-width: 560px){
+            height: 50px;
         }
     }
 `
@@ -91,4 +92,11 @@ export const TreeDots = styled.span`
   @media (max-width: 1075px) {
     display: block;
   }
+`
+
+export const AddLogos = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 `

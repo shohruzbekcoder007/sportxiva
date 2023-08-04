@@ -2,7 +2,10 @@ import styled from "styled-components";
 import { Link } from 'react-router-dom'
 
 export const ChampionshipTitle = styled.div`
-    padding-bottom: 150px;
+    padding-bottom: 50px;
+    /* @media (max-width: 700px) {
+        padding-bottom: 30px;
+    } */
 `
 
 export const ChampionshipMainBlog = styled.div`
