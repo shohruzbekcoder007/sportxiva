@@ -90,7 +90,6 @@ export const RegisterRightInputs = styled.div `
 }
 `
 
-
 export const RegisterRightBtn = styled.div `
  display: flex; 
  justify-content: space-around; 
@@ -107,4 +106,8 @@ export const RegisterRightBtn = styled.div `
       padding: 10px;
     }
 }
+`
+
+export const RegWrapper = styled.div`
+  padding-top: 250px;
 `

@@ -56,5 +56,8 @@ export const WelcomeImage = styled.div`
         @media (max-width: 950px) {
             width: 400px;
         }
+        @media (max-width: 420px) {
+            width: 300px;
+        }
     }
 `

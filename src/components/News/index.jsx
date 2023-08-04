@@ -3,7 +3,7 @@ import { RegisterTitle } from '../Register/styles'
 import { MainWrapper } from '../../global_styles/styles'
 import { WelcomeContainer } from '../Welcome/styles'
 import img1 from '../../imgs/osh.png'
-import { NewsImgCard, NewsRight, NewsWalksLink, NewsWalksSlickImageWrapper, NewsWalksSlickInfo, NewsWalksSlickItem, NewsWalksSlickTitle, NewsWelcomeContainer } from './styles'
+import { NewsContainer, NewsImgCard, NewsRight, NewsWalksLink, NewsWalksSlickImageWrapper, NewsWalksSlickInfo, NewsWalksSlickItem, NewsWalksSlickTitle, NewsWelcomeContainer, NewsWrapper } from './styles'
 import { getNews } from './request'
 import { news } from '../../utils/API_urls'
 import { useSelector } from 'react-redux'
@@ -23,12 +23,12 @@ export default function News() {
     })
   }, [])
   return (
-    <div>
+    <NewsWrapper>
       <MainWrapper>
         <RegisterTitle>
           <h1>Yangiliklar</h1>
         </RegisterTitle>
-        <WelcomeContainer>
+        <NewsContainer>
           <NewsImgCard >
             <img src={News[News.length-1]?.image} alt="" />
           </NewsImgCard>
@@ -36,7 +36,7 @@ export default function News() {
             <h1>{News[News.length-1]?.name}</h1>
             <p>{News[News.length-1]?.description}</p>
           </NewsRight>
-        </WelcomeContainer>
+        </NewsContainer>
 
         <NewsWelcomeContainer>
           {
@@ -57,6 +57,6 @@ export default function News() {
           }
         </NewsWelcomeContainer>
       </MainWrapper>
-    </div>
+    </NewsWrapper>
   )
 }
