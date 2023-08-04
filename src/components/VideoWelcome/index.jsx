@@ -35,7 +35,7 @@ export default function VideoWelcome() {
         <video src={videoBg} autoPlay loop muted />
         <VideoWelcomeDateWrapper>
           <VideoWelcomeDateContainer>
-            <h3>Festival boshlanishiga qoldi:</h3>
+            <h3>{language.before_festival[lang]}</h3>
             <p>{days} {language.date_kun[lang]} <span>|</span> {hours} {language.date_soat[lang]} <span>|</span> {minutes} {language.date_minut[lang]} <span>|</span> {seconds} {language.date_sekund[lang]}</p>
           </VideoWelcomeDateContainer>
         </VideoWelcomeDateWrapper>
