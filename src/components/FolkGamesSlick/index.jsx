@@ -5,6 +5,8 @@ import "slick-carousel/slick/slick-theme.css";
 import { WalksLink, WalksSlickImageWrapper, WalksSlickInfo, WalksSlickItem, WalksSlickTitle } from "./styles";
 import { getSayil } from "./requests";
 import { milliy } from "../../utils/API_urls";
+import { useSelector } from "react-redux";
+import language from '../../utils/language.json'
 
 export default function FolkGamesSlick() {
 
@@ -68,12 +70,11 @@ export default function FolkGamesSlick() {
                             <WalksSlickImageWrapper>
                                 <img src={elem.photo} alt="Uzbekistan_Airways" />
                             </WalksSlickImageWrapper>
-                            <WalksSlickTitle>{elem.name}</WalksSlickTitle>
+                            <WalksSlickTitle>{elem[`name_${lang}`]}</WalksSlickTitle>
                             <WalksSlickInfo>
-                                {elem.discription}
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus maiores nostrum quos numquam sit ut quasi tempore assumenda quod expedita unde beatae modi, eveniet nisi, quia deleniti odio earum asperiores?
+                                {elem[`description_${lang}`].slice(0,70)}...
                             </WalksSlickInfo>
-                            <WalksLink to="/">Batafsil</WalksLink>
+                            <WalksLink to="/">{language.more[lang]}</WalksLink>
                         </WalksSlickItem>
                     )
                 })
