@@ -215,6 +215,8 @@
       "eng": "sekund"
     },
     "before_festival": {
-
+      "uz": "Festival boshlanishiga qoldi:",
+      "ru": "Festival boshlanishiga qoldi: ru",
+      "eng": "Festival boshlanishiga qoldi: eng"
     }
 }
