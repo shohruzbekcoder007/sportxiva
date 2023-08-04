@@ -2,221 +2,221 @@
     "home_page": {
       "uz": "Asosiy",
       "ru": "Основной",
-      "eng": "Main"
+      "en": "Main"
     },
     "news_page": {
       "uz": "Yangiliklar",
       "ru": "Новости",
-      "eng": "News"
+      "en": "News"
     },
     "dedline": {
       "uz": "Festival boshlanishiga qoldi",
       "ru": "До начала фестиваля осталось",
-      "eng": "dedline"
+      "en": "dedline"
     },
     "Events": {
       "uz": "Tadbirlar",
       "ru": "События",
-      "eng": "Events"
+      "en": "Events"
     },
     "Organizers": {
       "uz": "Tashkilotchilar",
       "ru": "Организаторы",
-      "eng": "Organizers"
+      "en": "Organizers"
     },
     "WelcomeFestival": {
       "uz": "Xalqaro etnosport festivaliga xush kelibsiz",
       "ru": "Добро пожаловать на международный фестиваль этноспорта",
-      "eng": "Welcome to the International Ethnosport Festival"
+      "en": "Welcome to the International Ethnosport Festival"
     },
     "Registr": {
       "uz": "Ro'yxatdan o'tish",
       "ru": "Регистрация",
-      "eng": "Register"
+      "en": "Register"
     },
     "Participating": {
       "uz": "Festivalda ishtirok etuvchi davlatlar",
       "ru": "Государства-участники фестиваля",
-      "eng": "Participating States of the festival"
+      "en": "Participating States of the festival"
     },
     "ForeignGuests": {
       "uz": "Xorijiy mehmonlar",
       "ru": "Иностранные гости",
-      "eng": "Foreign guests"
+      "en": "Foreign guests"
     },
     "ParticipantsCompetition": {
       "uz": "Musoboqa ishtirokchilari",
       "ru": "Участники соревнований",
-      "eng": "Participants of the competition"
+      "en": "Participants of the competition"
     },
     "View": {
       "uz": "Ko'rish",
       "ru": "Смотреть",
-      "eng": "View"
+      "en": "View"
     },
     "Championships": {
       "uz": "Jaxon chempionatlari",
       "ru": "Чемпионаты мира",
-      "eng": "World Championships"
+      "en": "World Championships"
     },
     "Demonstration": {
       "uz": "Ko’rgazmali sportlar",
       "ru": "Показательные виды спорта",
-      "eng": "Demonstration sports"
+      "en": "Demonstration sports"
     },
     "BirdHunting": {
       "uz": "Qush ovi",
       "ru": "Охота на птиц",
-      "eng": "Bird hunting"
+      "en": "Bird hunting"
     },
     "Kopkari": {
       "uz": "Kopkari",
       "ru": "Копкари",
-      "eng": "Kopkari"
+      "en": "Kopkari"
     },
     "Archery": {
       "uz": "Kamondan otish",
       "ru": "Стрельба из лука",
-      "eng": "Archery"
+      "en": "Archery"
     },
     "MartialArts": {
       "uz": "Turon yakka kurashi",
       "ru": "единоборство турон",
-      "eng": "Martial Arts 'Turon'"
+      "en": "Martial Arts 'Turon'"
     },
     "OurHistory": {
       "uz": "Bizning tariximiz",
       "ru": "Наша история",
-      "eng": "Our History"
+      "en": "Our History"
     },
     "Sponsors": {
       "uz": "Homiylar",
       "ru": "Спонсоры",
-      "eng": "Sponsors"
+      "en": "Sponsors"
     },
     "Sayil": {
       "uz": "Sayillar",
       "ru": "Sayil",
-      "eng": "Sayil"
+      "en": "Sayil"
     },
     "NationalFolk": {
       "uz": "Milliy xalq o’yinlari",
       "ru": "Национальные народные игры",
-      "eng": "National Folk Games"
+      "en": "National Folk Games"
     },
     "feedback": {
       "uz": "Fikr va mulohazalar",
       "ru": "Отзывы",
-      "eng": "feedback"
+      "en": "feedback"
     },
     "Send": {
       "uz": "Jo'natish",
       "ru": "Отправить",
-      "eng": "Send"
+      "en": "Send"
     },
     "MinistryUzbekistan": {
       "uz": "O’zbekiston Republikasi Yoshlar siyosati va sport vazirligi ",
       "ru": "Министерство молодежной политики и спорта Республики Узбекистан",
-      "eng": "Ministry of Youth Policy and Sports of the Republic of Uzbekistan"
+      "en": "Ministry of Youth Policy and Sports of the Republic of Uzbekistan"
     },
     "FestivalProgram": {
       "uz": "Festival dasturi",
       "ru": "Программа фестиваля",
-      "eng": "Festival program"
+      "en": "Festival program"
     },
     "CulturalEvents": {
       "uz": "Madaniy tadbirlar",
       "ru": "Культурные мероприятия",
-      "eng": "Cultural events"
+      "en": "Cultural events"
     },
     "SportsEvents": {
       "uz": "Sport tadbirlari",
       "ru": "Спортивные мероприятия",
-      "eng": "Sports events"
+      "en": "Sports events"
     },
     "country": {
       "uz": "Davlati",
       "ru": "страна",
-      "eng": "country"
+      "en": "country"
     },
     "Datebirth": {
       "uz": "Tug’ilgan sana",
       "ru": "Дата рождения",
-      "eng": "Date of birth"
+      "en": "Date of birth"
     },
     "Name": {
       "uz": "Ism",
       "ru": "Имя",
-      "eng": "Name"
+      "en": "Name"
     },
     "Surname": {
       "uz": "Familiya",
       "ru": "Фамилия",
-      "eng": "Surname"
+      "en": "Surname"
     },
     "sporttype": {
       "uz": "Sport turi",
       "ru": "вид спорта",
-      "eng": "sport type"
+      "en": "sport type"
     },
     "gender": {
       "uz": "Jinsi",
       "ru": "Пол",
-      "eng": "gender"
+      "en": "gender"
     },
     "RegistrationGuest": {
       "uz": "Mehmon sifatida ro’yxatdan o’tish",
       "ru": "Регистрация в качестве гостя",
-      "eng": "Registration as a guest"
+      "en": "Registration as a guest"
     },
     "download": {
       "uz": "Nizomni yuklab olish",
       "ru": "скачать",
-      "eng": "download"
+      "en": "download"
     },
     "PhotoGallery": {
       "uz": "Fotogalereya",
       "ru": "Фотогалерея",
-      "eng": "Photo Gallery"
+      "en": "Photo Gallery"
     },
     "choose": {
       "uz": "tanlang",
       "ru": "выбрать",
-      "eng": "choose"
+      "en": "choose"
     },
     "date": {
       "uz": "sana",
       "ru": "дата",
-      "eng": "date"
+      "en": "date"
     },
     "more": {
       "uz": "Batafsil",
       "ru": "Более",
-      "eng": "More"
+      "en": "More"
     },
     "date_kun": {
       "uz": "kun",
-      "ru": "kun ru",
-      "eng": "day"
+      "ru": "день",
+      "en": "day"
     },
     "date_soat": {
-      "uz": "kun",
-      "ru": "kun ru",
-      "eng": "day"
+      "uz": "soat",
+      "ru": "час",
+      "en": "hour"
     },
     "date_minut": {
       "uz": "minut",
-      "ru": "sekund ru",
-      "eng": "sekund"
+      "ru": "минут",
+      "en": "minute"
     },
     "date_sekund": {
       "uz": "sekund",
-      "ru": "sekund ru",
-      "eng": "sekund"
+      "ru": "секунд",
+      "en": "second"
     },
     "before_festival": {
       "uz": "Festival boshlanishiga qoldi:",
-      "ru": "Fфестиваль вот-вот начнется:",
-      "eng": "Festival boshlanishiga qoldi: eng"
+      "ru": "фестиваль вот-вот начнется:",
+      "en": "the festival is about to start"
     }
 }
