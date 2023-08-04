@@ -1,5 +1,4 @@
-
-import CountryMembersTable from '../CountryMembersTable'
+import CountryMembersTable from '../CountryMembersTable/TableCountryMembers'
 
 
 export default function MainCountryMembers() {

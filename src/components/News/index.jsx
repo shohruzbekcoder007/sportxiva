@@ -48,7 +48,7 @@ export default function News() {
                   </NewsWalksSlickImageWrapper>
                   <NewsWalksSlickTitle>{item?.name}</NewsWalksSlickTitle>
                   <NewsWalksSlickInfo>
-                    {item?.description.slice(0,150)}
+                    {item?.description.slice(0,70)}...
                   </NewsWalksSlickInfo>
                   <NewsWalksLink to={`/info`} state={item}>{language.more[lang]}</NewsWalksLink>
                 </NewsWalksSlickItem>
