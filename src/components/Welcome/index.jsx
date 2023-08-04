@@ -7,6 +7,7 @@ import { useSelector } from 'react-redux'
 import language from '../../utils/language.json'
 
 export default function Welcome() {
+  
   const lang = useSelector(state => state.language)
 
   return (
