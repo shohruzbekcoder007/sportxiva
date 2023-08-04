@@ -1,6 +1,5 @@
 import React from 'react'
-import { RegisterGuest, RegisterImage, RegisterInput, RegisterTitle, BirthdayField, PhotoContaner, RegisterRight, RegisterContainer, RegisterRightInputs, RegisterRightBtn } from './styles'
-import { WelcomeContainer } from '../Welcome/styles'
+import { RegisterGuest, RegisterImage, RegisterTitle, PhotoContaner, RegisterRight, RegisterContainer, RegisterRightInputs, RegisterRightBtn, RegWrapper } from './styles'
 import { MainWrapper } from '../../global_styles/styles'
 import CountrySelect from '../CountrySelect/CountrySelect'
 import Checkbox from '@mui/material/Checkbox';
@@ -59,7 +58,7 @@ export default function Register() {
   }
 
   return (
-    <div>
+    <RegWrapper>
       <MainWrapper>
         <RegisterTitle>
           <h1>Ro’yxatdan o’tish</h1>
@@ -166,6 +165,6 @@ export default function Register() {
           </div>
         </PhotoContaner>
       </MainWrapper>
-    </div>
+    </RegWrapper>
   )
 }

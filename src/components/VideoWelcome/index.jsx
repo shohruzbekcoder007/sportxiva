@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import videoBg from "../../media/bg_video_asosiy.mp4"
 import { VideoWelcomeDateContainer, VideoWelcomeDateWrapper, VideoWelcomeWrapper } from './styles'
-import { MainWrapper } from '../../global_styles/styles'
 
 export default function VideoWelcome() {
 
