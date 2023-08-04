@@ -10,8 +10,6 @@ import language from '../../utils/language.json'
 
 export default function FolkGamesSlick() {
 
-  const lang = useSelector(state => state.language)
-
     const [sayils, setSayils] = useState([])
 
     useEffect(() => {
@@ -32,37 +30,11 @@ export default function FolkGamesSlick() {
         autoplaySpeed: 2000,
         cssEase: "linear",
         arrows: false,
-        responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true
-              }
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                initialSlide: 2
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
-            }
-          ]
     };
 
     return (
         <div className="walks-slick">
-        {sayils.length !== 0 ? <Slider {...settings}>
+        <Slider {...settings}>
             {
                 sayils.map((elem, index) => {
                     return (
@@ -79,8 +51,7 @@ export default function FolkGamesSlick() {
                     )
                 })
             }
-        </Slider>:<></>
-}
+        </Slider>
         </div>
     );
 }
