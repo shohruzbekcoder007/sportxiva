@@ -193,5 +193,28 @@
       "uz": "Batafsil",
       "ru": "Более",
       "eng": "More"
+    },
+    "date_kun": {
+      "uz": "kun",
+      "ru": "kun ru",
+      "eng": "day"
+    },
+    "date_soat": {
+      "uz": "kun",
+      "ru": "kun ru",
+      "eng": "day"
+    },
+    "date_minut": {
+      "uz": "minut",
+      "ru": "sekund ru",
+      "eng": "sekund"
+    },
+    "date_sekund": {
+      "uz": "sekund",
+      "ru": "sekund ru",
+      "eng": "sekund"
+    },
+    "before_festival": {
+
     }
 }

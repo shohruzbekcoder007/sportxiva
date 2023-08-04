@@ -9,7 +9,7 @@ import GenderSelector from '../CountrySelect/GenderSelector'
 import { useState } from 'react'
 import { registr } from '../../utils/API_urls'
 import { setRegister } from './requests'
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"
 import BasicDatePicker from './BasicDatePicker'
 
 
