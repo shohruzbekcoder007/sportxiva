@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { WalksLink, WalksSlickImageWrapper, WalksSlickInfo, WalksSlickItem, WalksSlickTitle } from "./styles";
 import { getSayil } from "./requests";
 import { milliy } from "../../utils/API_urls";
+import { useSelector } from "react-redux";
 
 export default function FolkGamesSlick() {
 
