@@ -2,9 +2,12 @@
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
+import language from '../../utils/language.json'
+import { useSelector } from 'react-redux';
 
 export default function GenderSelector(props) {
 
+  const lang = useSelector(state => state.language)
   
 
   return (
@@ -13,12 +16,12 @@ export default function GenderSelector(props) {
       sx={{ width: 300 }}
       options={[
         {
-          name : 'Erkak',
+          name : language.Man[lang],
           id: 'male'
 
         },
         {
-          name : 'Ayol',
+          name : language.Woman[lang],
           id: 'female'
 
         }
@@ -30,9 +33,9 @@ export default function GenderSelector(props) {
           {option.name} 
         </Box>
       )}
-      onChange={(event, newValue) => {
-        props.setJins(newValue.id)
-      }}
+      // onChange={(event, newValue) => {
+      //   props.setJins(newValue.id)
+      // }}
       renderInput={(params) => (
         <TextField
           {...params}

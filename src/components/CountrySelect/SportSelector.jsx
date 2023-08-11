@@ -4,11 +4,13 @@ import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import { milliy_registr } from '../../utils/API_urls';
 import { countryName } from './requests';
+import { useSelector } from 'react-redux';
 
 export default function SportSelector(props) {
 
   const [countries, setCountries] = useState([])
   const [contId, setCountId] = useState(0)
+  const lang = useSelector(state => state.language)
 
   useEffect(() => {
     countryName(milliy_registr, (response) => {
@@ -38,16 +40,16 @@ export default function SportSelector(props) {
       sx={{ width: 300 }}
       options={countries}
       autoHighlight
-      getOptionLabel={(option) => option.name}
+      getOptionLabel={(option) => option[`name_${lang}`]}
       renderOption={(props, option) => (
         <Box component="li" sx={{ '& > img': { mr: 2, flexShrink: 0 } }} {...props}>
-          {option.name}
+          {option[`name_${lang}`]}
         </Box>
       )}
-      onChange={(event, newValue) => {
-        setCountId(newValue.id);
-        props.setCountId(newValue.id)
-      }}
+      // onChange={(event, newValue) => {
+      //   setCountId(newValue.id);
+      //   props.setCountId(newValue.id)
+      // }}
       renderInput={(params) => (
         <TextField
           {...params}

@@ -7,10 +7,13 @@ import TabPanel from '@mui/lab/TabPanel';
 import { getTabs } from './requests';
 import { calendar } from '../../utils/API_urls';
 import { CalendarImageWrapper } from './styles';
+import { useSelector } from 'react-redux';
 
 export default function EventsWithTableTabs() {
     const [value, setValue] = React.useState('0');
     const [tablist, setTablist] = React.useState([])
+    const lang = useSelector(state => state.language)
+
 
     React.useEffect(() => {
         getTabs(calendar, (response) => {
@@ -62,7 +65,7 @@ export default function EventsWithTableTabs() {
                             padding: '56px 0 50px 0'
                         }} key={index} value={elem.id+""}>
                             <CalendarImageWrapper>
-                                <img src={`${elem.image}`} alt="tab img"/>
+                                <img src={elem[`image_${lang}`]} alt="tab img"/>
                             </CalendarImageWrapper>
                         </TabPanel>
                     })

@@ -40,9 +40,9 @@
       "en": "Participating States of the festival"
     },
     "ForeignGuests": {
-      "uz": "Xorijiy mehmonlar",
-      "ru": "Иностранные гости",
-      "en": "Foreign guests"
+      "uz": " mehmonlar",
+      "ru": " гости",
+      "en": " guests"
     },
     "ParticipantsCompetition": {
       "uz": "Musoboqa ishtirokchilari",
@@ -218,5 +218,16 @@
       "uz": "Festival boshlanishiga qoldi:",
       "ru": "фестиваль вот-вот начнется:",
       "en": "the festival is about to start"
+    },
+    "Man": {
+      "uz": "Erkak",
+      "ru": "Мужчина",
+      "en": "Man"
+    }, 
+    "Woman": {
+      "uz": "Ayol",
+      "ru": "Женщина",
+      "en": "Woman"
     }
-}
+  }
+  
